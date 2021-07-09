@@ -1,20 +1,24 @@
 import './App.css';
 import React from 'react';
-import {BrowserRouter as Router, Route} from "react-router-dom";
-import Home from './Home';
-import About from './About';
-import NotFound from './NotFound';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 class App extends React.Component {
     render() {
         return (
-            <div className="App">
-                <Router basename={process.env.PUBLIC_URL}>
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/about" component={About}/>
-                    <Route component={NotFound} status={404}/>
-                </Router>
-            </div>
+            <main className="text-gray-400 bg-gray-900 body-font">
+                <Navbar/>
+                <About/>
+                <Projects/>
+                <Skills/>
+                <Contact/>
+                <center>
+                    <embed src={'/assets/CV Colin Troisemaine.pdf'} width="600" height="900" type="application/pdf"/>
+                </center>
+            </main>
         );
     }
 }
