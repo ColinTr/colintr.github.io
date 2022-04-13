@@ -1,7 +1,6 @@
-# Notes for deploy :
+# How to deploy the website updates :
 
-1. > npm run deploy
-2. > git push
+> npm run deploy
 
 Easy as that !
 

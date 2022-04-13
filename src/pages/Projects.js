@@ -2,24 +2,24 @@ import React from 'react';
 import { useNav } from '../customHooks/useNav';
 import './Page.css';
 
-const Projects = () => {
-    // useNav takes in a navLinkId and returns a ref
-    // this ref is used to register the navLinkId that's
-    // currently in view, and apply activeClass styling
-    // to the corresponding nav childElement
+import {Col, Container, Row} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const Projects = () => {
     const projectsRef = useNav('Projects');
 
     return (
         <section ref={projectsRef} id='projectsContainer'>
-            <img
-                src='https://source.unsplash.com/random/600x600/?nature,water'
-                alt='unsplash-img'
-            />
-            <div>
-                <h3>PROJECTS</h3>
-                <p>This is the projects section</p>
-            </div>
+            <Container>
+                <Row>
+                    <Col className="col-xs-12 col-md-4">
+                        <h1>Projects</h1>
+                    </Col>
+                    <Col className="col-xs-12 col-md-8">
+                        <p>This is the projects section</p>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 };

@@ -1,5 +1,5 @@
 .linkCV a {
-    color: #FFFFFF;
+    color: #34495E;
     text-decoration: none;
 }
 
@@ -9,10 +9,16 @@ nav {
     z-index: 10;
     top: 0;
     padding: 1.2em 0;
-    color: white;
-    background-color: var(--darkAccent);
     max-height: 4em;
     justify-content: center;
+
+    background: #fff;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+    color: #34495E;
+
+    font-weight: 400;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
 }
 
 .navSubElement {
@@ -35,13 +41,13 @@ nav span:hover {
 }
 
 nav span:hover i {
-    color: gold;
+    color: black;
 }
 
 nav span.activeClass i {
-    color: gold;
+    color: black;
 }
 
 nav span.activeClass {
-    border-bottom-color: var(--lightAccent);
+    border-bottom-color: black;
 }
