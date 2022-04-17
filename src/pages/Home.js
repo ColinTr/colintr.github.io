@@ -5,6 +5,9 @@ import './Page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Col, Container, Row} from "react-bootstrap";
 
+import 'font-awesome/css/font-awesome.min.css';
+import '../academicons/css/academicons.min.css';
+
 const Home = () => {
     const homeRef = useNav('Home');
 
@@ -13,37 +16,102 @@ const Home = () => {
             <Container>
                 <Row>
                     <Col className="text-center col-12 col-lg-4">
-                        <Row><Col><img src='/assets/profil_rond.png' alt="profile" style={{'width': '200px'}}/></Col></Row>
-                        <Row className="pt-3"><Col><span style={{color:'rgba(0,0,0)', fontSize: '35px'}}>Colin Troisemaine</span></Col></Row>
-                        <Row className="pt-3"><Col><span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>Ph.D Student in computer science</span></Col></Row>
-                        <Row className="pt-2"><Col><span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}><a rel="noreferrer" target="_blank"  href='https://lelab.orange.fr/locations/1'>Orange Labs</a>, France, Lannion</span></Col></Row>
-                        <Row className="pt-2"><Col><span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}><a rel="noreferrer" target="_blank"  href='https://imt-atlantique.fr/'>IMT Atlantique</a>, France, Brest</span></Col></Row>
-                        <Row className="pt-3 container-fluid justify-content-center">
-                            <Col className="d-flex justify-content-center col-sm-2">
-                                <a rel="noreferrer" target="_blank" href='https://scholar.google.com/citations?user=bs3E-o4AAAAJ'><img src='/assets/google_scholar_logo.png' alt="google scholar" style={{'width': '32px'}}/></a>
-                            </Col>
-                            <Col className="d-flex justify-content-center col-sm-2">
-                                <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr'><img src='/assets/github_logo.png' alt="github" style={{'width': '32px'}}/></a>
-                            </Col>
-                            <Col className="d-flex justify-content-center col-sm-2">
-                                <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/colin-troisemaine/'><img src='/assets/linkedin_logo.png' alt="github" style={{'width': '32px'}}/></a>
-                            </Col>
-                        </Row>
+                        <center>
+                            <Row>
+                                <Col>
+                                    <img src='/assets/profil_rond.png' alt="profile" style={{'width': '200px'}}/>
+                                </Col>
+                            </Row>
+                            <Row className="pt-3">
+                                <Col>
+                                    <span style={{color:'rgba(0,0,0)', fontSize: '35px'}}>Colin Troisemaine</span>
+                                </Col>
+                            </Row>
+                            <Row className="pt-3">
+                                <Col>
+                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>Ph.D Student in data science</span>
+                                </Col>
+                            </Row>
+                            <Row className="pt-2">
+                                <Col>
+                                    <span style={{fontSize: '20px'}}>
+                                        <a rel="noreferrer" target="_blank" href='https://lelab.orange.fr/locations/1' id="article_title">Orange Labs, France, Lannion</a>
+                                    </span>
+                                </Col>
+                            </Row>
+                            <Row className="pt-2">
+                                <Col>
+                                    <span style={{fontSize: '20px'}}>
+                                        <a rel="noreferrer" target="_blank" href='https://imt-atlantique.fr/' id="article_title">IMT Atlantique, France, Brest</a>
+                                    </span>
+                                </Col>
+                            </Row>
+                            <Row className="pt-3 pb-4 container-fluid justify-content-center">
+                                <div className="col-5 d-flex col-sm-2 justify-content-end">
+                                    <a rel="noreferrer" target="_blank" href='https://scholar.google.com/citations?user=bs3E-o4AAAAJ'>
+                                        <i className="ai ai-google-scholar-square fa-2x" style={{color: '#33b38d'}}/>
+                                    </a>
+                                </div>
+                                <div className="col-2 d-flex col-sm-2 justify-content-center">
+                                    <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr'>
+                                        <svg fill="#33b38d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="32" height="32"  style={{color: '#33b38d'}}>
+                                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div className="col-5 d-flex col-sm-2 justify-content-start">
+                                    <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/colin-troisemaine/'>
+                                        <svg fill="#33b38d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32">
+                                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </Row>
+                        </center>
                     </Col>
                     <Col className="col-12 col-lg-8">
                         <Row>
                             <Col>
-                                <h1>About me</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h1 id="h1_home">About me</h1>
+                                <p align="justify" id="about_section">
+                                    I'm Colin Troisemaine, a PhD student in data science with a computer science engineering degree. Currently, I work at the R&D center of Orange in Lannion, under the supervision of the doctoral school IMT Atlantique.
+                                    I study the discovery of new faults and diagnostics in the optical fiber network of customers.
+                                    I am particularly interested in the area of <i>Novel Class Discovery</i>, which itself lies at the intersection of several other lines of research (such as <i>Transfer Learning</i>, <i>Open-World Learning</i> or <i>Semi-Supervised Learning</i>).
+                                    In my spare time, I like to explore new technologies such as 3D printing and FPV drone flight.
+                                </p>
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                Interests
-                            </Col>
-                            <Col>
-                                Education
-                            </Col>
+                            <div className="col-md-5 pt-3">
+                                <h3 id="h3_home">Interests</h3>
+                                <ul>
+                                    <li><p id="education_p" className="my-1 pt-2">Artificial Neural Networks</p></li>
+                                    <li><p id="education_p" className="my-1 pt-2">Unsupervised Learning</p></li>
+                                    <li><p id="education_p" className="my-1 pt-2">Novel Class Discovery</p></li>
+                                </ul>
+                            </div>
+                            <div className="col-md-7 pt-3">
+                                <h3 id="h3_home">Education</h3>
+                                <ul className="fa-ul">
+                                    <li>
+                                        <span className="fa-li"><i className="fa fa-graduation-cap pt-2"/></span>
+                                        <p id="education_p" className="my-1 pt-2">PhD in Data Science</p>
+                                        <p id="education_p_2" className="my-1">Orange Labs, IMT Atlantique</p>
+                                        <p id="education_p_2" className="my-1">Oct. 2021 - present</p>
+                                    </li><li>
+                                    <span className="fa-li"><i className="fa fa-graduation-cap pt-3"/></span>
+                                    <p id="education_p" className="my-1 pt-3">Master's Degree in Computer Science</p>
+                                    <p id="education_p_2" className="my-1">University of Sherbrooke, Quebec</p>
+                                    <p id="education_p_2" className="my-1">Sep. 2020 - Aug. 2021</p>
+                                </li>
+                                    <li>
+                                        <span className="fa-li"><i className="fa fa-graduation-cap pt-3"/></span>
+                                        <p id="education_p" className="my-1 pt-3">Engineering Degree in Computer Science</p>
+                                        <p id="education_p_2" className="my-1">Polytechnic school of the University of Tours, France</p>
+                                        <p id="education_p_2" className="my-1">Sep. 2018 - Aug. 2021</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </Row>
                     </Col>
                 </Row>

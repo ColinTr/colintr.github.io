@@ -2,14 +2,15 @@ section {
     max-width: 1200px;
     border-bottom: 1px solid lightgrey;
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#text-align-left {
+#citation_popup_div {
     text-align: left;
+    overflow-y: hidden;
 }
 
 #article_title {
@@ -17,6 +18,7 @@ section {
     font-size: 20px;
     color: #33b38d;
 }
+
 #article_title:hover {
     text-decoration: underline;
 }
@@ -25,6 +27,85 @@ section {
     color: rgba(0,0,0,.54);
     text-decoration: none;
 }
+
 #article_metadata:hover {
     text-decoration: underline;
+}
+
+#h3_skills {
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 20px;
+}
+
+#h3_home {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    color: #313131;
+    font-size: 25px;
+}
+
+#h1_home {
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    color: #313131;
+    font-size: 40px;
+    line-height: 1.25;
+}
+
+#p_skills {
+    font-family: Roboto,sans-serif;
+    color: #555555;
+    font-size: 13px;
+}
+
+h1 {
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    color: #313131;
+    font-size: 36px;
+}
+
+#education_p {
+    font-family: Roboto,sans-serif;
+    font-size: 18px;
+    color: #000000CC;
+}
+
+#education_p_2 {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    color: #00000099;
+}
+
+#custom_button {
+    border-color: #33b38d;
+    color: #33b38d;
+}
+#custom_button:hover {
+    background-color: #33b38d;
+    color: #f0f0f0;
+}
+
+#iframe_icon {
+    pointer-events: none;
+}
+
+#iframe_button {
+    padding: 2px;
+    border: none;
+    background: none;
+}
+
+#iframe_button:hover {
+    padding: 0;
+    border: 2px solid #33b38d;
+}
+
+#about_section {
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    color: #000000CC;
+    line-height: 1.1;
 }
