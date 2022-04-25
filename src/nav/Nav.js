@@ -6,8 +6,8 @@ import {Col, Row, Container} from "react-bootstrap";
 
 const Nav = () => {
     return (
-        <nav>
-            <Container style={{maxWidth: '1200px', minWidth: '550px', overflowX: 'auto', overflowY: 'hidden'}}>
+        <nav style={{overflowY: "hidden", overflowX:"auto"}}>
+            <Container style={{maxWidth: '1200px', minWidth: '510px'}}>
                 <Row>
                     <Col style={{textAlign: 'left'}}>
                         <div className='navSubElement'>
