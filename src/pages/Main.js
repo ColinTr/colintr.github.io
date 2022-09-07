@@ -5,8 +5,8 @@ const Main = () => (
     <main>
         <Home />
         <Skills />
-        <Projects />
         <Publications />
+        <Projects />
     </main>
 );
 
