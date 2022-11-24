@@ -13,14 +13,11 @@ const Publications = () => {
     const publicationsRef = useNav('Publications');
 
     const article_2_citation =
-        '@misc{tabularncd,\n' +
-        '   doi = {10.48550/ARXIV.2209.01217},\n' +
+        '@inproceedings{tabularncd,\n' +
         '   author = {Troisemaine, Colin and Flocon-Cholet, Joachim and Gosselin, Stéphane and Vaton, Sandrine and Reiffers-Masson, Alexandre and Lemaire, Vincent},\n' +
-        '   keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},\n' +
         '   title = {A Method for Discovering Novel Classes in Tabular Data},\n' +
-        '   publisher = {arXiv},\n' +
+        '   booktitle={IEEE International Conference on Knowledge Graph (ICKG)},\n' +
         '   year = {2022},\n' +
-        '   copyright = {Creative Commons Attribution 4.0 International}\n' +
         '}'
 
     const article_1_citation =
