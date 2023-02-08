@@ -23,10 +23,14 @@ const Publications = () => {
 
     const article_2_citation =
         '@inproceedings{tabularncd,\n' +
-        '   title = {A Method for Discovering Novel Classes in Tabular Data},\n' +
         '   author = {Troisemaine, Colin and Flocon-Cholet, Joachim and Gosselin, Stéphane and Vaton, Sandrine and Reiffers-Masson, Alexandre and Lemaire, Vincent},\n' +
-        '   booktitle={IEEE International Conference on Knowledge Graph (ICKG)},\n' +
+        '   booktitle = {2022 IEEE International Conference on Knowledge Graph (ICKG)},\n' +
+        '   title={A Method for Discovering Novel Classes in Tabular Data},\n' +
         '   year = {2022},\n' +
+        '   volume={},\n' +
+        '   number={},\n' +
+        '   pages={265-274},\n' +
+        '   doi={10.1109/ICKG55886.2022.00041}\n' +
         '}'
 
     const article_1_citation =
@@ -108,7 +112,7 @@ const Publications = () => {
                         <Row className="my-3">
                             <div>
                                 <FontAwesomeIcon icon={faFileAlt}/>
-                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://arxiv.org/abs/2209.01217">
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://ieeexplore.ieee.org/document/10030036">
                                     A Method for Discovering Novel Classes in Tabular Data
                                 </a>
                             </div>
