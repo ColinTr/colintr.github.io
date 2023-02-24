@@ -12,6 +12,15 @@ import './Page.css';
 const Publications = () => {
     const publicationsRef = useNav('Publications');
 
+    const article_4_citation =
+        '@article{tr2023introduction,\n' +
+        '   title = {Novel Class Discovery: an Introduction and Key Concepts},\n' +
+        '   author = {Troisemaine, Colin and Lemaire, Vincent and Gosselin, Stéphane and Reiffers-Masson, Alexandre and Flocon-Cholet, Joachim and Vaton, Sandrine},\n' +
+        '   publisher = {arXiv},\n' +
+        '   year = {2023},\n' +
+        '   doi = {10.48550/ARXIV.2302.12028},\n' +
+        '}'
+
     const article_3_citation =
         '@article{tr2022construction,\n' +
         '   title = {Découvrir de nouvelles classes dans des données tabulaires},\n' +
@@ -77,6 +86,30 @@ const Publications = () => {
                         <h1>Publications</h1>
                     </Col>
                     <Col className="col-12 col-lg-8">
+
+                        <Row className="my-3">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://arxiv.org/abs/2302.12028">
+                                    Novel Class Discovery: an Introduction and Key Concepts
+                                </a>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://arxiv.org/">
+                                    Arxiv preprint
+                                </a>
+                            </div>
+                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
+                                <button id="custom_button" onClick={() => cite_article(article_4_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                    <span>Cite</span>
+                                </button>
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2302.12028.pdf" style={{display:"flex", alignItems:"center"}}>
+                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                    <span>PDF</span>
+                                </a>
+                            </div>
+                        </Row>
 
                         <Row className="my-3">
                             <div>
