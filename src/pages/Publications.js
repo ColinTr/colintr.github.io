@@ -90,7 +90,7 @@ const Publications = () => {
                         <Row className="my-3">
                             <div>
                                 <FontAwesomeIcon icon={faFileAlt}/>
-                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://arxiv.org/abs/2302.12028">
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/368753429_Novel_Class_Discovery_an_Introduction_and_Key_Concepts">
                                     Novel Class Discovery: an Introduction and Key Concepts
                                 </a>
                             </div>
@@ -114,7 +114,7 @@ const Publications = () => {
                         <Row className="my-3">
                             <div>
                                 <FontAwesomeIcon icon={faFileAlt}/>
-                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://arxiv.org/abs/2211.16352">
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/365849981_Decouvrir_de_nouvelles_classes_dans_des_donnees_tabulaires">
                                     Découvrir de nouvelles classes dans des données tabulaires
                                 </a>
                             </div>
@@ -145,7 +145,7 @@ const Publications = () => {
                         <Row className="my-3">
                             <div>
                                 <FontAwesomeIcon icon={faFileAlt}/>
-                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://ieeexplore.ieee.org/document/10030036">
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/368313618_A_Method_for_Discovering_Novel_Classes_in_Tabular_Data">
                                     A Method for Discovering Novel Classes in Tabular Data
                                 </a>
                             </div>
