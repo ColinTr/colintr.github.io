@@ -15,35 +15,37 @@ const Publications = () => {
     const article_4_citation =
         '@article{tr2023introduction,\n' +
         '   title = {Novel Class Discovery: an Introduction and Key Concepts},\n' +
-        '   author = {Troisemaine, Colin and Lemaire, Vincent and Gosselin, Stéphane and Reiffers-Masson, Alexandre and Flocon-Cholet, Joachim and Vaton, Sandrine},\n' +
+        '   author = {Troisemaine, Colin and Lemaire, Vincent and Gosselin, St{\'{e}}phane and Reiffers{-}Masson, Alexandre and Flocon{-}Cholet, Joachim and Vaton, Sandrine},\n' +
         '   publisher = {arXiv},\n' +
         '   year = {2023},\n' +
-        '   doi = {10.48550/ARXIV.2302.12028},\n' +
+        '   doi = {10.48550/ARXIV.2302.12028}\n' +
         '}'
 
     const article_3_citation =
-        '@article{tr2022construction,\n' +
-        '   title = {Découvrir de nouvelles classes dans des données tabulaires},\n' +
-        '   author = {Troisemaine, Colin and Flocon-Cholet, Joachim and Gosselin, Stéphane and Vaton, Sandrine and Reiffers-Masson, Alexandre and Lemaire, Vincent},\n' +
-        '   publisher = {arXiv},\n' +
-        '   year = {2022},\n' +
-        '   doi = {10.48550/ARXIV.2211.16352},\n' +
+        '@inproceedings{tr2023decouvrir,\n' +
+        '   title = {D{\'{e}}couvrir de nouvelles classes dans des donn{\'{e}}es tabulaires},\n' +
+        '   author = {Troisemaine, Colin and Flocon{-}Cholet, Joachim and Gosselin, St{\'{e}}phane and Vaton, Sandrine and Reiffers{-}Masson, Alexandre and Lemaire, Vincent},\n' +
+        '   booktitle = {Extraction et Gestion des Connaissances, {EGC}},\n' +
+        '   series = {{RNTI}},\n' +
+        '   volume = {{E-39}},\n' +
+        '   pages = {467--474},\n' +
+        '   publisher = {Editions {RNTI}},\n' +
+        '   year = {2023}\n' +
         '}'
 
     const article_2_citation =
-        '@inproceedings{tabularncd,\n' +
-        '   author = {Troisemaine, Colin and Flocon-Cholet, Joachim and Gosselin, Stéphane and Vaton, Sandrine and Reiffers-Masson, Alexandre and Lemaire, Vincent},\n' +
-        '   booktitle = {2022 IEEE International Conference on Knowledge Graph (ICKG)},\n' +
-        '   title={A Method for Discovering Novel Classes in Tabular Data},\n' +
+        '@inproceedings{tr2022method,\n' +
+        '   title = {A Method for Discovering Novel Classes in Tabular Data},\n' +
+        '   author = {Troisemaine, Colin and Flocon{-}Cholet, Joachim and Gosselin, St{\'{e}}phane and Vaton, Sandrine and Reiffers{-}Masson, Alexandre and Lemaire, Vincent},\n' +
+        '   booktitle = {{IEEE} International Conference on Knowledge Graph, {ICKG}},\n' +
+        '   pages = {265-274},\n' +
+        '   publisher = {{IEEE}},\n' +
         '   year = {2022},\n' +
-        '   volume={},\n' +
-        '   number={},\n' +
-        '   pages={265-274},\n' +
-        '   doi={10.1109/ICKG55886.2022.00041}\n' +
+        '   doi = {10.1109/ICKG55886.2022.00041}\n' +
         '}'
 
     const article_1_citation =
-        '@article{RNTI/papers/1002730,\n' +
+        '@article{tr2022construction,\n' +
         '   title = {Construction de variables à l\'aide de classifieurs comme aide à la régression : une évaluation empirique},\n' +
         '   author = {Colin Troisemaine and Vincent Lemaire},\n' +
         '   journal = {Revue des Nouvelles Technologies de l\'Information},\n' +

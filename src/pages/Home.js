@@ -20,7 +20,7 @@ const Home = () => {
                         <center>
                             <Row>
                                 <Col>
-                                    <img src='/assets/profil_rond.png' alt="profile" style={{'width': '200px'}}/>
+                                    <img src='/assets/profil_rond.jpg' alt="profil" style={{'width': '250px'}}/>
                                 </Col>
                             </Row>
                             <Row className="pt-3">
@@ -71,12 +71,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-2 d-flex col-sm-2 justify-content-center">
                                     <a rel="noreferrer" target="_blank" href='https://orcid.org/0000-0003-2211-1767'>
-                                        <img src={"/ORCID_iD.svg"} title="ORCID" width="32" height="32"/>
+                                        <img src={"/ORCID_iD.svg"} title="ORCID" alt="logo orcid" width="32" height="32"/>
                                     </a>
                                 </div>
                                 <div className="col-2 d-flex col-sm-2 justify-content-center">
                                     <a rel="noreferrer" target="_blank" href='https://hal.archives-ouvertes.fr/search/index/q/*/authIdHal_s/colin-troisemaine'>
-                                        <img src={"/logo-hal.svg"} title="HAL Archives Ouvertes" width="32" height="32"/>
+                                        <img src={"/logo-hal.svg"} alt="logo HAL" title="HAL Archives Ouvertes" width="32" height="32"/>
                                     </a>
                                 </div>
                             </Row>
