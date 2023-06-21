@@ -4,13 +4,23 @@ import { useNav } from '../customHooks/useNav';
 import { Col, Container, Row } from "react-bootstrap";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {FaGithub, FaQuoteRight, FaRegFilePdf} from "react-icons/fa";
+import {FaGithub, FaQuoteRight, FaRegFilePdf, FaYoutube} from "react-icons/fa";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 
 const Publications = () => {
     const publicationsRef = useNav('Publications');
+
+    const article_5_citation =
+        '@inproceedings{tr2023interface,\n' +
+        '   title = {An Interactive Interface for Novel Class Discovery in Tabular Data},\n' +
+        '   author = {Troisemaine, Colin and Flocon{-}Cholet, Joachim and Gosselin, St{\'{e}}phane and Reiffers{-}Masson, Alexandre and Vaton, Sandrine and Lemaire, Vincent},\n' +
+        '   booktitle = {Joint European Conference on Machine Learning and Knowledge Discovery in Databases},\n' +
+        '   pages = {},\n' +
+        '   year = {2022},\n' +
+        '   organization = {Springer},\n' +
+        '}'
 
     const article_4_citation =
         '@article{tr2023introduction,\n' +
@@ -80,6 +90,17 @@ const Publications = () => {
         })
     }
 
+    function citation_5_swal_video_popup() {
+        Swal.fire({
+            title: ' ',
+            html:
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/W7ru8NHPj-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            width: 620,
+            showCloseButton: true,
+            showConfirmButton: false,
+        })
+    }
+
     return (
         <section ref={publicationsRef} id='publicationsContainer'>
             <Container>
@@ -88,6 +109,38 @@ const Publications = () => {
                         <h1>Publications</h1>
                     </Col>
                     <Col className="col-12 col-lg-8">
+
+                        <Row className="my-3">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/371731536_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data">
+                                    An Interactive Interface for Novel Class Discovery in Tabular Data
+                                </a>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://2023.ecmlpkdd.org/">
+                                    European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2023)
+                                </a>
+                            </div>
+                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
+                                <button id="custom_button" onClick={() => cite_article(article_5_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                    <span>Cite</span>
+                                </button>
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.researchgate.net/profile/Vincent-Lemaire-3/publication/371731536_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data/links/64929d68b9ed6874a5c36e0f/An-Interactive-Interface-for-Novel-Class-Discovery-in-Tabular-Data.pdf" style={{display:"flex", alignItems:"center"}}>
+                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                    <span>PDF</span>
+                                </a>
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
+                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                    <span>Code</span>
+                                </a>
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
+                                    <span style={{marginRight:"3px"}}><FaYoutube/></span>
+                                    <span>Video</span>
+                                </a>
+                            </div>
+                        </Row>
 
                         <Row className="my-3">
                             <div>
