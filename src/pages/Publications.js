@@ -127,7 +127,7 @@ const Publications = () => {
                                     <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
                                     <span>Cite</span>
                                 </button>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.researchgate.net/profile/Vincent-Lemaire-3/publication/371731536_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data/links/64929d68b9ed6874a5c36e0f/An-Interactive-Interface-for-Novel-Class-Discovery-in-Tabular-Data.pdf" style={{display:"flex", alignItems:"center"}}>
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2306.12919.pdf" style={{display:"flex", alignItems:"center"}}>
                                     <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                     <span>PDF</span>
                                 </a>
