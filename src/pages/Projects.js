@@ -92,7 +92,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_projet_comparaison.png" width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/illustration_projet_comparaison.png" width="170" alt="project 2 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -115,7 +115,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/mario_qt.png" width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/mario_qt.png" width="170" alt="project 3 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -138,7 +138,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_main_robot.png" width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/illustration_main_robot.png" width="170" alt="project 4 illustration"/>
                                     {/*<button id="iframe_button" onClick={robot_hand_swal_video_popup}>*/}
                                     {/*    <iframe id="iframe_icon" width="170" src="https://www.youtube.com/embed/cz-6uy60Rsc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>*/}
                                     {/*</button>*/}

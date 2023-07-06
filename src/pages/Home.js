@@ -20,7 +20,7 @@ const Home = () => {
                         <center>
                             <Row>
                                 <Col>
-                                    <img src='/assets/profil_rond.jpg' alt="profil" style={{'width': '250px'}}/>
+                                    <img src='/assets/profil_rond.jpg' alt="Profile picture" style={{'width': '250px'}}/>
                                 </Col>
                             </Row>
                             <Row className="pt-3">
@@ -71,12 +71,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-2 d-flex col-sm-2 justify-content-center">
                                     <a rel="noreferrer" target="_blank" href='https://orcid.org/0000-0003-2211-1767'>
-                                        <img src={"/ORCID_iD.svg"} title="ORCID" alt="logo orcid" width="32" height="32"/>
+                                        <img src={"/ORCID_iD.svg"} title="ORCID" alt="ORCID logo" width="32" height="32"/>
                                     </a>
                                 </div>
                                 <div className="col-2 d-flex col-sm-2 justify-content-center">
                                     <a rel="noreferrer" target="_blank" href='https://hal.archives-ouvertes.fr/search/index/q/*/authIdHal_s/colin-troisemaine'>
-                                        <img src={"/logo-hal.svg"} alt="logo HAL" title="HAL Archives Ouvertes" width="32" height="32"/>
+                                        <img src={"/logo-hal.svg"} alt="logo HAL" title="HAL Archives Ouvertes logo" width="32" height="32"/>
                                     </a>
                                 </div>
                             </Row>
@@ -107,7 +107,7 @@ const Home = () => {
                                 <h3 id="h3_home">Education</h3>
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
-                                        <a rel="noreferrer" target="_blank" href="https://www.imt-atlantique.fr/fr">
+                                        <a rel="noreferrer" target="_blank" href="https://www.imt-atlantique.fr/">
                                             <img src="/assets/logo_IMT_Atlantique.png" alt="IMT Atlantique logo" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
