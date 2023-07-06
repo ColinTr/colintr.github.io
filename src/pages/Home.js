@@ -30,7 +30,7 @@ const Home = () => {
                             </Row>
                             <Row className="pt-3">
                                 <Col>
-                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>Ph.D Student in data science</span>
+                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>PhD Student in data science</span>
                                 </Col>
                             </Row>
                             <Row className="pt-2">
@@ -90,12 +90,12 @@ const Home = () => {
                                     I'm Colin Troisemaine, a PhD student in data science with a computer science engineering degree. Currently, I work at the R&D center of Orange in Lannion, under the supervision of the doctoral school IMT Atlantique.
                                     I study the discovery of new faults and diagnostics in the optical fiber network of customers.
                                     I am particularly interested in the area of <i>Novel Class Discovery</i>, which itself lies at the intersection of several other lines of research (such as <i>Transfer Learning</i>, <i>Open-World Learning</i> or <i>Semi-Supervised Learning</i>).
-                                    In my spare time, I like to explore new technologies such as 3D printing and FPV drone flight.
+                                    In my spare time, I play the guitar and explore new technologies such as 3D printing and FPV drone flight.
                                 </p>
                             </Col>
                         </Row>
                         <Row>
-                            <div className="col-md-5 pt-3">
+                            <div className="col-md-4 pt-3">
                                 <h3 id="h3_home">Interests</h3>
                                 <ul>
                                     <li><p id="education_p" className="my-1 pt-2">Artificial Neural Networks</p></li>
@@ -103,27 +103,44 @@ const Home = () => {
                                     <li><p id="education_p" className="my-1 pt-2">Novel Class Discovery</p></li>
                                 </ul>
                             </div>
-                            <div className="col-md-7 pt-3">
+                            <div className="col-md-8 pt-3">
                                 <h3 id="h3_home">Education</h3>
-                                <ul className="fa-ul">
-                                    <li>
-                                        <span className="fa-li"><i className="fa fa-graduation-cap pt-2"/></span>
-                                        <p id="education_p" className="my-1 pt-2">PhD in Data Science</p>
-                                        <p id="education_p_2" className="my-1">Orange Labs, IMT Atlantique</p>
-                                        <p id="education_p_2" className="my-1">Oct. 2021 - present</p>
-                                    </li><li>
-                                    <span className="fa-li"><i className="fa fa-graduation-cap pt-3"/></span>
-                                    <p id="education_p" className="my-1 pt-3">Master's Degree in Computer Science</p>
-                                    <p id="education_p_2" className="my-1">University of Sherbrooke, Quebec</p>
-                                    <p id="education_p_2" className="my-1">Sep. 2020 - Aug. 2021</p>
-                                </li>
-                                    <li>
-                                        <span className="fa-li"><i className="fa fa-graduation-cap pt-3"/></span>
-                                        <p id="education_p" className="my-1 pt-3">Engineering Degree in Computer Science</p>
+                                <Row className="align-items-center">
+                                    <Col className="flex flex-grow-0">
+                                        <a rel="noreferrer" target="_blank" href="https://www.imt-atlantique.fr/fr">
+                                            <img src="/assets/logo_IMT_Atlantique.png" alt="IMT Atlantique logo" style={{'width': '54px'}}/>
+                                        </a>
+                                    </Col>
+                                    <Col className="flex flex-grow-1 px-0">
+                                        <p id="education_p" className="my-1">PhD in Data Science</p>
+                                        <p id="education_p_2" className="my-1">IMT Atlantique, Orange Labs</p>
+                                        <p id="education_p_2" className="my-1">Oct. 2021 - Oct. 2024</p>
+                                    </Col>
+                                </Row>
+                                <Row className="align-items-center">
+                                    <Col className="flex flex-grow-0">
+                                        <a rel="noreferrer" target="_blank" href="https://www.usherbrooke.ca/">
+                                            <img src="/assets/logo_sherbrooke_university.png" alt="Sherbrooke University logo" style={{'width': '54px'}}/>
+                                        </a>
+                                    </Col>
+                                    <Col className="flex flex-grow-1 px-0">
+                                        <p id="education_p" className="my-1">Master's Degree in Computer Science</p>
+                                        <p id="education_p_2" className="my-1">University of Sherbrooke, Quebec</p>
+                                        <p id="education_p_2" className="my-1">Sep. 2020 - Aug. 2021</p>
+                                    </Col>
+                                </Row>
+                                <Row className="align-items-center">
+                                    <Col className="flex flex-grow-0">
+                                        <a rel="noreferrer" target="_blank" href="https://polytech.univ-tours.fr/">
+                                            <img src="/assets/logo_polytech_tours.png" alt="Polytech Tours logo" style={{'width': '54px'}}/>
+                                        </a>
+                                    </Col>
+                                    <Col className="flex flex-grow-1 px-0">
+                                        <p id="education_p" className="my-1">Engineering Degree in Computer Science</p>
                                         <p id="education_p_2" className="my-1">Polytechnic school of the University of Tours, France</p>
                                         <p id="education_p_2" className="my-1">Sep. 2018 - Aug. 2021</p>
-                                    </li>
-                                </ul>
+                                    </Col>
+                                </Row>
                             </div>
                         </Row>
                     </Col>

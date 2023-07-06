@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import 'font-awesome/css/font-awesome.css'
-import {faFile} from "@fortawesome/free-regular-svg-icons";
+import {FaRegFilePdf} from "react-icons/fa";
 
 const Projects = () => {
     const projectsRef = useNav('Projects');
@@ -50,9 +50,9 @@ const Projects = () => {
                                     Comparison of 3 active learning selection criteria: Random sampling, Uncertainty sampling and Diverse Mini Batch sampling on the two deep neural networks VGGNet16 and LeNet and on the two databases MNIST and CIFAR10.
                                 </p>
                                 <Row>
-                                    <Col  className="col-9">
+                                    <Col className="col-9">
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux/blob/master/TROISEMAINE_BOUCHARD_INACIO_Rapport_Projet_de_Session_IFT780.pdf">
-                                            <FontAwesomeIcon icon={faFile} /> Report
+                                            <FaRegFilePdf/> Report
                                         </a>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux">
                                             <FontAwesomeIcon icon={faGithub}/> Code
@@ -65,7 +65,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/projet_reseaux_neuronaux_illustration.png"  width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/projet_reseaux_neuronaux_illustration.png" width="170" alt="project 1 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -77,9 +77,9 @@ const Projects = () => {
                                     Comparison of 6 common classification methods and review of the good practices of machine learning.
                                 </p>
                                 <Row>
-                                    <Col  className="col-9">
+                                    <Col className="col-9">
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_techniques_apprentissage/blob/master/Rapport_projet_de_session_TROISEMAINE_LEVIEUX.pdf">
-                                            <FontAwesomeIcon icon={faFile} /> Report
+                                            <FaRegFilePdf/> Report
                                         </a>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_techniques_apprentissage">
                                             <FontAwesomeIcon icon={faGithub}/> Code
@@ -92,7 +92,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_projet_comparaison.png"  width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/illustration_projet_comparaison.png" width="170" alt="project 1 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -115,7 +115,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/mario_qt.png"  width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/mario_qt.png" width="170" alt="project 1 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -138,7 +138,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_main_robot.png"  width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/illustration_main_robot.png" width="170" alt="project 1 illustration"/>
                                     {/*<button id="iframe_button" onClick={robot_hand_swal_video_popup}>*/}
                                     {/*    <iframe id="iframe_icon" width="170" src="https://www.youtube.com/embed/cz-6uy60Rsc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>*/}
                                     {/*</button>*/}
