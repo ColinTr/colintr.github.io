@@ -26,7 +26,7 @@ const Publications = () => {
         '@article{tr2023introduction,\n' +
         '   title = {Novel Class Discovery: an Introduction and Key Concepts},\n' +
         '   author = {Troisemaine, Colin and Lemaire, Vincent and Gosselin, St{\'{e}}phane and Reiffers{-}Masson, Alexandre and Flocon{-}Cholet, Joachim and Vaton, Sandrine},\n' +
-        '   publisher = {arXiv},\n' +
+        '   journal = {ArXiv},\n' +
         '   year = {2023},\n' +
         '   doi = {10.48550/ARXIV.2302.12028}\n' +
         '}'
