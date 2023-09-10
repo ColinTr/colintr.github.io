@@ -73,6 +73,14 @@ const Home = () => {
                                     </a>
                                 </div>
                             </Row>
+                            <Row>
+                                <Col>
+                                    <button className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}
+                                        onClick={() => window.open("/mario/Mario.html", "_blank")}>
+                                        <img src="/assets/mario-small-jump.png" alt="Jumping mario" title="Play Mario" style={{'width': '45px'}}/>
+                                    </button>
+                                </Col>
+                            </Row>
                         </center>
                     </Col>
                     <Col className="col-12 col-lg-8">

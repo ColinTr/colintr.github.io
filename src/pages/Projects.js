@@ -105,7 +105,10 @@ const Projects = () => {
                                 </p>
                                 <Row>
                                     <Col  className="col-9">
-                                        <button id="custom_button" className="btn btn-outline-primary my-1 mr-1 btn-sm" onClick={mario_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
+                                        <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={() => window.open("/mario/Mario.html", "_blank")}>
+                                            <img src="/assets/mario-small-jump.png" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
+                                        </button>
+                                        <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={mario_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/MarioQT"><FontAwesomeIcon icon={faGithub}/> Code</a>
                                     </Col>
                                     <Col className="col-3 d-flex align-items-center justify-content-end">
@@ -128,7 +131,7 @@ const Projects = () => {
                                 </p>
                                 <Row>
                                     <Col  className="col-9">
-                                        <button id="custom_button" className="btn btn-outline-primary my-1 mr-1 btn-sm" onClick={robot_hand_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
+                                        <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={robot_hand_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/RobotHand"><FontAwesomeIcon icon={faGithub}/> Code</a>
                                     </Col>
                                     <Col className="col-3 d-flex align-items-center justify-content-end">
