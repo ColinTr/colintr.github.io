@@ -10,17 +10,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 
 const Publications = () => {
-    const publicationsRef = useNav('Publications');
-
     const article_5_citation =
         '@inproceedings{tr2023interface,\n' +
         '   title = {An Interactive Interface for Novel Class Discovery in Tabular Data},\n' +
         '   author = {Troisemaine, Colin and Flocon{-}Cholet, Joachim and Gosselin, St{\'{e}}phane and Reiffers{-}Masson, Alexandre and Vaton, Sandrine and Lemaire, Vincent},\n' +
-        '   booktitle = {Joint European Conference on Machine Learning and Knowledge Discovery in Databases},\n' +
-        '   pages = {},\n' +
-        '   year = {2022},\n' +
-        '   organization = {Springer},\n' +
+        '   booktitle = {Machine Learning and Knowledge Discovery in Databases: Applied Data Science and Demo Track},\n' +
+        '   volume = {14175},\n' +
+        '   pages = {295--299},\n' +
+        '   publisher = {Springer},\n' +
+        '   year = {2023},\n' +
+        '   doi = {10.1007/978-3-031-43430-3\\_18},\n' +
         '}'
+
+    const publicationsRef = useNav('Publications');
 
     const article_4_citation =
         '@article{tr2023introduction,\n' +
@@ -48,7 +50,7 @@ const Publications = () => {
         '   title = {A Method for Discovering Novel Classes in Tabular Data},\n' +
         '   author = {Troisemaine, Colin and Flocon{-}Cholet, Joachim and Gosselin, St{\'{e}}phane and Vaton, Sandrine and Reiffers{-}Masson, Alexandre and Lemaire, Vincent},\n' +
         '   booktitle = {{IEEE} International Conference on Knowledge Graph, {ICKG}},\n' +
-        '   pages = {265-274},\n' +
+        '   pages = {265--274},\n' +
         '   publisher = {{IEEE}},\n' +
         '   year = {2022},\n' +
         '   doi = {10.1109/ICKG55886.2022.00041}\n' +
@@ -61,7 +63,7 @@ const Publications = () => {
         '   journal = {Revue des Nouvelles Technologies de l\'Information},\n' +
         '   volume = {Extraction et Gestion des Connaissances, RNTI-E-38},\n' +
         '   year = {2022},\n' +
-        '   pages = {217-224}\n' +
+        '   pages = {217--224}\n' +
         '}'
 
     function cite_article(citation) {
