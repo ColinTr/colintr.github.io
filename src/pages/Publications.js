@@ -115,7 +115,7 @@ const Publications = () => {
                         <Row className="my-3">
                             <div>
                                 <FontAwesomeIcon icon={faFileAlt}/>
-                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/371731536_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data">
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/373988863_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data">
                                     An Interactive Interface for Novel Class Discovery in Tabular Data
                                 </a>
                             </div>
