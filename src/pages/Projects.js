@@ -104,7 +104,7 @@ const Projects = () => {
                                     This is a playable level editor in the style of Super Mario Bros Nes. The user can design large levels before playing or even sharing them. It was developed using the C++ API <a rel="noreferrer" target="_blank" href="https://www.qt.io/" style={{color: '#33b38d'}}>QT</a>, while adhering to the <a rel="noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" style={{color: '#33b38d'}}>Model–view–controller</a> design patern.
                                 </p>
                                 <Row>
-                                    <Col  className="col-9">
+                                    <Col className="col-9">
                                         <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={() => window.open("/mario/Mario.html", "_blank")}>
                                             <img src="/assets/mario-small-jump.png" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
                                         </button>
@@ -130,7 +130,7 @@ const Projects = () => {
                                     Conception on <a rel="noreferrer" target="_blank" href="http://www.3ds.com/products/catia/" style={{color: '#33b38d'}}>Catia</a> and realization by 3D printing and laser cutting. Independent control of each finger using servomotors and instructions sent over Bluetooth with a custom android application.
                                 </p>
                                 <Row>
-                                    <Col  className="col-9">
+                                    <Col className="col-9">
                                         <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={robot_hand_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/RobotHand"><FontAwesomeIcon icon={faGithub}/> Code</a>
                                     </Col>

@@ -2,25 +2,24 @@ import React from 'react';
 import NavLink from './NavLink';
 import { navLinks } from './navLinks';
 import './Nav.css';
-import {Col, Row, Container} from "react-bootstrap";
+import {Col} from "react-bootstrap";
 
 const Nav = () => {
     return (
         <nav style={{overflowY: "hidden", overflowX:"auto"}}>
-            <Container style={{maxWidth: '1200px', minWidth: '510px'}}>
-                <Row>
-                    <Col style={{textAlign: 'left'}}>
-                        <div className='navSubElement'>
-                            {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-                                <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
-                            ))}
-                        </div>
+            <div className="row px-3 m-0 flex-nowrap">
+                {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+                    <Col className="col-auto navSubElement p-0" key={"btn" + idx}>
+                        <NavLink key={"navlink" + idx} navLinkId={navLinkId} scrollToId={scrollToId} />
                     </Col>
-                    <Col style={{textAlign: 'right'}}>
-                        <span className="linkCV"><a href='/assets/CV Colin Troisemaine.pdf'>CV</a></span>
-                    </Col>
-                </Row>
-            </Container>
+                ))}
+                <Col className="flex-grow p-0 m-0" />
+                <Col className="col-auto p-0">
+                    <span className="linkCV">
+                        <a href='/assets/CV Colin Troisemaine.pdf'>CV</a>
+                    </span>
+                </Col>
+            </div>
         </nav>
     );
 };

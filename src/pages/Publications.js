@@ -10,6 +10,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 
 const Publications = () => {
+    const publicationsRef = useNav('Publications');
+
+    const article_6_citation =
+        '@article{tr2023practical,\n' +
+        '   title = {A Practical Approach to Novel Class Discovery in Tabular Data},\n' +
+        '   author = {Troisemaine, Colin and Reiffers{-}Masson, Alexandre and Gosselin, St{\'{e}}phane and Lemaire, Vincent and Vaton, Sandrine},\n' +
+        '   journal = {ArXiv},\n' +
+        '   year = {2023},\n' +
+        '   doi = {10.48550/ARXIV.2311.05440}\n' +
+        '}'
+
     const article_5_citation =
         '@inproceedings{tr2023interface,\n' +
         '   title = {An Interactive Interface for Novel Class Discovery in Tabular Data},\n' +
@@ -21,8 +32,6 @@ const Publications = () => {
         '   year = {2023},\n' +
         '   doi = {10.1007/978-3-031-43430-3\\_18},\n' +
         '}'
-
-    const publicationsRef = useNav('Publications');
 
     const article_4_citation =
         '@article{tr2023introduction,\n' +
@@ -115,6 +124,40 @@ const Publications = () => {
                         <Row className="my-3">
                             <div>
                                 <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/???">
+                                    A Practical Approach to Novel Class Discovery in Tabular Data
+                                </a>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://arxiv.org/">
+                                    Arxiv preprint
+                                </a>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_6_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2311.05440.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/PracticalNCD" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Row>
+
+                        <Row className="my-3">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
                                 <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/373988863_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data">
                                     An Interactive Interface for Novel Class Discovery in Tabular Data
                                 </a>
@@ -124,24 +167,32 @@ const Publications = () => {
                                     European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2023)
                                 </a>
                             </div>
-                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_5_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2306.12919.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
-                                </a>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaYoutube/></span>
-                                    <span>Video</span>
-                                </a>
-                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_5_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2306.12919.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaYoutube/></span>
+                                        <span>Video</span>
+                                    </a>
+                                </Col>
+                            </Row>
                         </Row>
 
                         <Row className="my-3">
@@ -156,16 +207,20 @@ const Publications = () => {
                                     Arxiv preprint
                                 </a>
                             </div>
-                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_4_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2302.12028.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_4_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2302.12028.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                            </Row>
                         </Row>
 
                         <Row className="my-3">
@@ -183,20 +238,26 @@ const Publications = () => {
                             <div className="pt-1" style={{color:'rgba(0,0,0,.54)'}}>
                                 <i>Translation of the article "A Method for Discovering Novel Classes in Tabular Data"</i>
                             </div>
-                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_3_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2211.16352" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
-                                </a>
-                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_3_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2211.16352" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
                         </Row>
 
                         <Row className="my-3">
@@ -211,20 +272,26 @@ const Publications = () => {
                                     IEEE International Conference on Knowledge Graph (ICKG 2022)
                                 </a>
                             </div>
-                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_2_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2209.01217" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
-                                </a>
-                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_2_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2209.01217" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
                         </Row>
 
                         <Row className="my-3">
@@ -239,20 +306,26 @@ const Publications = () => {
                                     French-speaking conference on Knowledge Extraction and Management (EGC 2022)
                                 </a>
                             </div>
-                            <div className="pt-1" style={{display:"flex", alignItems:"center"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_1_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2112.03703" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/ClassificationForRegression" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
-                                </a>
-                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_1_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2112.03703" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/ClassificationForRegression" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
                         </Row>
 
                     </Col>
