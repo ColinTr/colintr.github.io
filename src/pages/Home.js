@@ -19,7 +19,7 @@ const Home = () => {
                         <center>
                             <Row>
                                 <Col>
-                                    <img src="/assets/profil_rond_medium.jpg" alt="Profile" style={{"maxWidth": "250px", width: "80vw"}} />
+                                    <img src="/assets/profil_rond_medium.webp" alt="Profile" style={{"maxWidth": "250px", width: "80vw"}} />
                                 </Col>
                             </Row>
                             <Row className="pt-3">
@@ -59,7 +59,7 @@ const Home = () => {
                                 </Col>
                                 <Col className="d-flex col-auto px-2 justify-content-center">
                                     <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/colin-troisemaine/'>
-                                        <img src="/assets/linkedin_logo.png" alt="LinkedIn" title="LinkedIn" style={{'width': '32px'}}/>
+                                        <img src="/assets/linkedin_logo.webp" alt="LinkedIn" title="LinkedIn" style={{'width': '32px'}}/>
                                     </a>
                                 </Col>
                                 <Col className="d-flex col-auto px-2 justify-content-center">
@@ -77,7 +77,7 @@ const Home = () => {
                                 <Col>
                                     <button className="btn btn-outline-primary my-1 p-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}
                                         onClick={() => window.open("/mario/Mario.html", "_blank")}>
-                                        <img src="/assets/mario-small-jump.png" alt="Jumping mario" title="Play Mario" style={{'width': '30px'}}/>
+                                        <img src="/assets/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '30px'}}/>
                                     </button>
                                 </Col>
                             </Row>
@@ -109,7 +109,7 @@ const Home = () => {
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
                                         <a rel="noreferrer" target="_blank" href="https://www.imt-atlantique.fr/">
-                                            <img src="/assets/logo_IMT_Atlantique.png" alt="IMT Atlantique logo" title="IMT Atlantique" style={{'width': '54px'}}/>
+                                            <img src="/assets/logo_IMT_Atlantique.webp" alt="IMT Atlantique logo" title="IMT Atlantique" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
                                     <Col className="flex flex-grow-1 px-0">
@@ -121,7 +121,7 @@ const Home = () => {
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
                                         <a rel="noreferrer" target="_blank" href="https://www.usherbrooke.ca/">
-                                            <img src="/assets/logo_sherbrooke_university.png" alt="Sherbrooke University logo" title="Sherbrooke University" style={{'width': '54px'}}/>
+                                            <img src="/assets/logo_sherbrooke_university.webp" alt="Sherbrooke University logo" title="Sherbrooke University" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
                                     <Col className="flex flex-grow-1 px-0">
@@ -133,7 +133,7 @@ const Home = () => {
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
                                         <a rel="noreferrer" target="_blank" href="https://polytech.univ-tours.fr/">
-                                            <img src="/assets/logo_polytech_tours.png" alt="Polytech Tours logo" title="Polytech Tours" style={{'width': '54px'}}/>
+                                            <img src="/assets/logo_polytech_tours.webp" alt="Polytech Tours logo" title="Polytech Tours" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
                                     <Col className="flex flex-grow-1 px-0">

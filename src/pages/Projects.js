@@ -65,7 +65,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/projet_reseaux_neuronaux_illustration.png" width="170" alt="project 1 illustration"/>
+                                    <img src="/assets/projet_reseaux_neuronaux_illustration.webp" width="170" alt="project 1 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -92,7 +92,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_projet_comparaison.png" width="170" alt="project 2 illustration"/>
+                                    <img src="/assets/illustration_projet_comparaison.webp" width="170" alt="project 2 illustration"/>
                                 </center>
                             </Col>
                         </Row>
@@ -106,7 +106,7 @@ const Projects = () => {
                                 <Row>
                                     <Col className="col-9">
                                         <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={() => window.open("/mario/Mario.html", "_blank")}>
-                                            <img src="/assets/mario-small-jump.png" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
+                                            <img src="/assets/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
                                         </button>
                                         <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={mario_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/MarioQT"><FontAwesomeIcon icon={faGithub}/> Code</a>
@@ -141,7 +141,7 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_main_robot.png" width="170" alt="project 4 illustration"/>
+                                    <img src="/assets/illustration_main_robot.webp" width="170" alt="project 4 illustration"/>
                                     {/*<button id="iframe_button" onClick={robot_hand_swal_video_popup}>*/}
                                     {/*    <iframe id="iframe_icon" width="170" src="https://www.youtube.com/embed/cz-6uy60Rsc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>*/}
                                     {/*</button>*/}

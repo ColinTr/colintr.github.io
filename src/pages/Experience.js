@@ -79,7 +79,7 @@ const Experience = () => {
                         <Row className="my-3">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://worldline.com/">
-                                    <img src="/assets/logo_worldline.png" alt="Worldline Global logo" title="Worldline Global" style={{'width': '50px'}}/>
+                                    <img src="/assets/logo_worldline.webp" alt="Worldline Global logo" title="Worldline Global" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
@@ -110,7 +110,7 @@ const Experience = () => {
                         <Row className="my-3 align-items-center">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://www.ganil-spiral2.eu/">
-                                    <img src="/assets/logo_ganil.png" alt="GANIL logo" title="GANIL" style={{'width': '50px'}}/>
+                                    <img src="/assets/logo_ganil.webp" alt="GANIL logo" title="GANIL" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
