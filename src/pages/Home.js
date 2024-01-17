@@ -59,7 +59,7 @@ const Home = () => {
                                 </Col>
                                 <Col className="d-flex col-auto px-2 justify-content-center">
                                     <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/colin-troisemaine/'>
-                                        <img src="/assets/linkedin_logo.webp" alt="LinkedIn" title="LinkedIn" style={{'width': '32px'}}/>
+                                        <img src="/assets/linkedin_logo.svg" alt="LinkedIn" title="LinkedIn" style={{'width': '32px'}}/>
                                     </a>
                                 </Col>
                                 <Col className="d-flex col-auto px-2 justify-content-center">
