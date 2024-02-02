@@ -88,10 +88,11 @@ const Home = () => {
                             <Col>
                                 <h1 id="h1_home">About me</h1>
                                 <p align="justify" id="about_section">
-                                    I'm Colin Troisemaine, a PhD student in data science with a computer science engineering degree. Currently, I work at the R&D center of Orange in Lannion, under the supervision of the doctoral school IMT Atlantique.
-                                    I study the discovery of new faults and diagnostics in the optical fiber network of customers.
-                                    I am particularly interested in the area of <i>Novel Class Discovery</i>, which itself lies at the intersection of several other lines of research (such as <i>Transfer Learning</i>, <i>Open-World Learning</i> or <i>Semi-Supervised Learning</i>).
-                                    In my spare time, I like to play the guitar and explore new technologies such as 3D printing and FPV drone flight.
+                                    I am Colin Troisemaine, a PhD student in Data Science with a degree in Computer Engineering.
+                                    I am currently working at the Orange R&D center in Lannion, under the supervision of the IMT Atlantique doctoral school.
+                                    My research focuses on finding new diagnoses for the faults that occur in optical fiber networks.
+                                    I am particularly interested in the area of <i>Novel Class Discovery</i>, which is at the intersection of several other lines of research (such as <i>Transfer Learning</i>, <i>Open-World Learning</i> or <i>Semi-Supervised Learning</i>).
+                                    In my spare time, I love playing chess ♞ and guitar 🎸, and exploring cool technologies like 3D printing 🖨️ and FPV drone flying 🚁.
                                 </p>
                             </Col>
                         </Row>
