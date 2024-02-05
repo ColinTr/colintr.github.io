@@ -39,6 +39,13 @@ const Experience = () => {
                                 A rule-based application maintained by network experts is currently used to diagnose failures.
                                 But a significant proportion of faults remain undiagnosed.
                                 The aim here is to uncover the missing diagnostics from this heterogeneous set of tabular data with a purely <i>machine learning</i> approach.
+                                <br/>
+                                <br/>
+                                <ul>
+                                    <li>Realized an comprehensive state-of-the-art of methods for discovering novel classes (Novel Class Discovery, Clustering, Transfer Learning, and Open-World Learning).</li>
+                                    <li>Developed several novel techniques to discover new classes in an unlabeled set of data, given a labeled set of data, specifically for tabular data.</li>
+                                    <li>Collected and curated a dataset of real internet access faults and engineered new features.</li>
+                                </ul>
                             </Col>
                         </Row>
 
@@ -61,8 +68,14 @@ const Experience = () => {
                         </Row>
                         <Row>
                             <Col style={{textAlign: "justify"}}>
-                                Improving the performance of state-of-the-art regressors by using random forest frameworks and/or XGBoost or an SNB.
-                                Drafting of a report in the form of a scientific publication with a positioning in the state of the art and an analysis of the results.
+                                Historically, classification problems have received more attention than regression problems due to their prevalence in real-world scenarios.
+                                The aim of this internship was to take advantage of the performance of state-of-the-art classification models such as Random Forest and XGBoost to create descriptive variables that will improve the performance of regression models.
+                                <br/>
+                                <br/>
+                                <ul>
+                                    <li>Developed a framework that can make use of any type of classification model to generate features to improve the performance of regression models.</li>
+                                    <li>Published an analysis of the results along a positioning of the SOTA in a conference paper.</li>
+                                </ul>
                             </Col>
                         </Row>
                         <Row className="flex">
@@ -93,7 +106,15 @@ const Experience = () => {
                         </Row>
                         <Row>
                             <Col style={{textAlign: "justify"}}>
-                                Implementation of a more easily interpretable log generation system to simplify troubleshooting, followed by the <i>Dockerization</i> of an application and the drafting of integration tests for the same project.
+                                In the event of a production incident, it is vital to understand the information transmitted to transaction receivers.
+                                The existing system centralised log storage and faced challenges in tracing errors back to the source transaction.
+                                In addition, the proprietary object type used makes it difficult to interpret the content of the messages.
+                                <br/>
+                                <br/>
+                                <ul>
+                                    <li>Developed an interpretable log generation system to simplify troubleshooting.</li>
+                                    <li><i>Dockerized</i> an application and designed integration tests for the same project.</li>
+                                </ul>
                             </Col>
                         </Row>
                         <Row className="flex">
@@ -110,7 +131,7 @@ const Experience = () => {
                         <Row className="my-3 align-items-center">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://www.ganil-spiral2.eu/">
-                                    <img src="/assets/logo_ganil.webp" alt="GANIL logo" title="GANIL" style={{'width': '50px'}}/>
+                                    <img src="/assets/ganil_logo.webp" alt="GANIL logo" title="GANIL" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
@@ -124,7 +145,14 @@ const Experience = () => {
                         </Row>
                         <Row>
                             <Col style={{textAlign: "justify"}}>
-                                Discovery of the management of a computer park in a large company.
+                                The GANIL (for <i>Grand Accélérateur National d'Ions Lourds</i>) is a particle accelerator located in Normandy.
+                                It is home to many researchers, whose computers and complex equipment require constant maintenance to ensure optimal functionality.
+                                <br/>
+                                <br/>
+                                <ul>
+                                    <li>Discovered the management of a computer park in a large company.</li>
+                                    <li>Configured, deployed and troubleshooted users' computers.</li>
+                                </ul>
                             </Col>
                         </Row>
                         <Row className="flex">
