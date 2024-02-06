@@ -48,6 +48,16 @@ const Experience = () => {
                                 </ul>
                             </Col>
                         </Row>
+                        {/*
+                        <Row className="flex">
+                            <div className="p-2">
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="">
+                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                    <span>Manuscript</span>
+                                </a>
+                            </div>
+                        </Row>
+                        */}
 
                         <center><hr style={{width: '90%'}}/></center>
 

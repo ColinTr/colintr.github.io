@@ -51,7 +51,7 @@ const Projects = () => {
                                 </p>
                                 <Row>
                                     <Col className="col-9">
-                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux/blob/master/TROISEMAINE_BOUCHARD_INACIO_Rapport_Projet_de_Session_IFT780.pdf">
+                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="/assets/TROISEMAINE_BOUCHARD_INACIO_Rapport_Projet_de_Session_IFT780.pdf">
                                             <FaRegFilePdf/> Report
                                         </a>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux">
@@ -78,7 +78,7 @@ const Projects = () => {
                                 </p>
                                 <Row>
                                     <Col className="col-9">
-                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_techniques_apprentissage/blob/master/Rapport_projet_de_session_TROISEMAINE_LEVIEUX.pdf">
+                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="/assets/Rapport_projet_de_session_TROISEMAINE_LEVIEUX.pdf">
                                             <FaRegFilePdf/> Report
                                         </a>
                                         <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/Projet_de_session_techniques_apprentissage">
@@ -109,7 +109,9 @@ const Projects = () => {
                                             <img src="/assets/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
                                         </button>
                                         <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={mario_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
-                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/MarioQT"><FontAwesomeIcon icon={faGithub}/> Code</a>
+                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/MarioQT">
+                                            <FontAwesomeIcon icon={faGithub}/> Code
+                                        </a>
                                     </Col>
                                     <Col className="col-3 d-flex align-items-center justify-content-end">
                                         <p id="education_p_2" className="my-1">Jul. 2020</p>
@@ -132,7 +134,12 @@ const Projects = () => {
                                 <Row>
                                     <Col className="col-9">
                                         <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={robot_hand_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
-                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/RobotHand"><FontAwesomeIcon icon={faGithub}/> Code</a>
+                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="/assets/Rapport_Projet_S4_Troisemaine_Levieux.pdf">
+                                            <FaRegFilePdf/> Report
+                                        </a>
+                                        <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/RobotHand">
+                                            <FontAwesomeIcon icon={faGithub}/> Code
+                                        </a>
                                     </Col>
                                     <Col className="col-3 d-flex align-items-center justify-content-end">
                                         <p id="education_p_2" className="my-1">Apr. 2018</p>
