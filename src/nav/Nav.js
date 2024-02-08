@@ -16,7 +16,7 @@ const Nav = () => {
                 <Col className="flex-grow p-0 m-0" />
                 <Col className="col-auto p-0">
                     <span className="linkCV">
-                        <a href='/assets/CV Colin Troisemaine.pdf'>CV</a>
+                        <a href='/assets/CV_Latex_Colin_Troisemaine_English.pdf'>CV</a>
                     </span>
                 </Col>
             </div>
