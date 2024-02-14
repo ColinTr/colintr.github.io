@@ -109,3 +109,11 @@ h1 {
     color: #000000CC;
     line-height: 1.1;
 }
+
+#grow_div {
+    transition: all .05s ease-in-out;
+}
+
+#grow_div:hover {
+    transform: scale(1.1);
+}

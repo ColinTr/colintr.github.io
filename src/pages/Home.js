@@ -46,41 +46,48 @@ const Home = () => {
                                     </span>
                                 </Col>
                             </Row>
-                            <Row className="pt-3 pb-2 container-fluid justify-content-center">
-                                <Col className="d-flex col-auto px-2 justify-content-center">
-                                    <a rel="noreferrer" target="_blank" href='https://scholar.google.com/citations?user=bs3E-o4AAAAJ'>
+                            <Row className="pt-3 mb-2 container-fluid justify-content-center">
+                                <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
+                                    <a rel="noreferrer" target="_blank" href='https://scholar.google.com/citations?user=bs3E-o4AAAAJ' className="pb-0">
                                         <img src="/assets/google_scholar_logo.svg" alt="Google Scholar" title="Google Scholar" style={{'width': '32px'}}/>
                                     </a>
                                 </Col>
-                                <Col className="d-flex col-auto px-2 justify-content-center">
+                                <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
                                     <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr'>
                                         <img src="/assets/github_logo.svg" alt="GitHub" title="GitHub" style={{'width': '32px'}}/>
                                     </a>
                                 </Col>
-                                <Col className="d-flex col-auto px-2 justify-content-center">
+                                <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
                                     <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/colin-troisemaine/'>
                                         <img src="/assets/linkedin_logo.svg" alt="LinkedIn" title="LinkedIn" style={{'width': '32px'}}/>
                                     </a>
                                 </Col>
-                                <Col className="d-flex col-auto px-2 justify-content-center">
+                                <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
                                     <a rel="noreferrer" target="_blank" href='https://orcid.org/0000-0003-2211-1767'>
                                         <img src="/assets/ORCID_iD.svg" alt="ORCID iD" title="ORCID iD" style={{'width': '32px'}}/>
                                     </a>
                                 </Col>
-                                <Col className="d-flex col-auto px-2 justify-content-center">
+                                <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
                                     <a rel="noreferrer" target="_blank" href='https://hal.archives-ouvertes.fr/search/index/q/*/authIdHal_s/colin-troisemaine'>
                                         <img src="/assets/logo-hal.svg" alt="HAL Archives Ouvertes" title="HAL Archives Ouvertes" width="32" height="32"/>
                                     </a>
                                 </Col>
+                                <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
+                                    <a rel="noreferrer" target="_blank" href='/assets/CV_Latex_Colin_Troisemaine_English.pdf'>
+                                        <i className="ai ai-cv ai-2x" style={{color: "black"}} title="Curriculum Vitae"/>
+                                    </a>
+                                </Col>
                             </Row>
+                            {/*
                             <Row>
                                 <Col>
                                     <button className="btn btn-outline-primary my-1 p-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}
-                                        onClick={() => window.open("/mario/Mario.html", "_blank")}>
+                                            onClick={() => window.open("/mario/Mario.html", "_blank")}>
                                         <img src="/assets/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '30px'}}/>
                                     </button>
                                 </Col>
                             </Row>
+                            */}
                         </center>
                     </Col>
                     <Col className="col-12 col-lg-8">
@@ -110,7 +117,7 @@ const Home = () => {
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
                                         <a rel="noreferrer" target="_blank" href="https://www.imt-atlantique.fr/">
-                                            <img src="/assets/logo_IMT_Atlantique.webp" alt="IMT Atlantique logo" title="IMT Atlantique" style={{'width': '54px'}}/>
+                                            <img src="/assets/logo_IMT_Atlantique.webp" alt="IMT Atlantique logo" id="grow_div" title="IMT Atlantique" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
                                     <Col className="flex flex-grow-1 px-0">
@@ -122,7 +129,7 @@ const Home = () => {
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
                                         <a rel="noreferrer" target="_blank" href="https://www.usherbrooke.ca/">
-                                            <img src="/assets/logo_sherbrooke_university.webp" alt="Sherbrooke University logo" title="Sherbrooke University" style={{'width': '54px'}}/>
+                                            <img src="/assets/logo_sherbrooke_university.webp" alt="Sherbrooke University logo" id="grow_div" title="Sherbrooke University" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
                                     <Col className="flex flex-grow-1 px-0">
@@ -134,7 +141,7 @@ const Home = () => {
                                 <Row className="align-items-center">
                                     <Col className="flex flex-grow-0">
                                         <a rel="noreferrer" target="_blank" href="https://polytech.univ-tours.fr/">
-                                            <img src="/assets/logo_polytech_tours.webp" alt="Polytech Tours logo" title="Polytech Tours" style={{'width': '54px'}}/>
+                                            <img src="/assets/logo_polytech_tours.webp" alt="Polytech Tours logo" id="grow_div" title="Polytech Tours" style={{'width': '54px'}}/>
                                         </a>
                                     </Col>
                                     <Col className="flex flex-grow-1 px-0">

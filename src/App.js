@@ -2,6 +2,7 @@ import { Nav } from './nav';
 import { Main } from './pages';
 import NavProvider from './context/NavContext';
 import './App.css';
+import './pages/Page.css'
 
 function App() {
     return (
