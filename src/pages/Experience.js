@@ -42,9 +42,10 @@ const Experience = () => {
                                 <br/>
                                 <br/>
                                 <ul>
-                                    <li>Realized a comprehensive state-of-the-art of methods for discovering novel classes (Novel Class Discovery, Clustering, Transfer Learning, and Open-World Learning).</li>
-                                    <li>Developed several novel techniques to discover new classes in an unlabeled set of data, given a labeled set of data, specifically for tabular data.</li>
-                                    <li>Collected and curated a dataset of real internet access faults and engineered new features.</li>
+                                    <li>Developed 4 original techniques to discover novel classes in an unlabeled set of tabular data.</li>
+                                    <li>Presented complex concepts to diverse audiences through accessible presentations at conferences.</li>
+                                    <li>Realized an extensive state of the art on novel class discovery techniques, which received 10 citations in one year.</li>
+                                    <li>Collected and curated a dataset of 500,000 real internet access faults and engineered 700 new features.</li>
                                 </ul>
                             </Col>
                         </Row>
@@ -83,8 +84,9 @@ const Experience = () => {
                                 <br/>
                                 <br/>
                                 <ul>
-                                    <li>Developed a framework that can make use of any type of classification model to generate features to improve the performance of regression models.</li>
-                                    <li>Published an analysis of the results along a positioning of the SOTA in a conference paper.</li>
+                                    <li>Designed a new way to create descriptive features to improve regression performance.</li>
+                                    <li>Developed a parametric framework that can make use of 4 different classification models to generate features to improve the performance of 5 regression models.</li>
+                                    <li>Published an analysis of the results along a positioning to the SOTA in a 12-page conference paper.</li>
                                 </ul>
                             </Col>
                         </Row>
@@ -123,7 +125,7 @@ const Experience = () => {
                                 <br/>
                                 <ul>
                                     <li>Developed an interpretable log generation system to simplify troubleshooting.</li>
-                                    <li><i>Dockerized</i> an application and designed integration tests for the same project.</li>
+                                    <li>Packaged an application in a Docker container and designed integration tests for the same project.</li>
                                 </ul>
                             </Col>
                         </Row>

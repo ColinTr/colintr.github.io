@@ -13,7 +13,9 @@ const programming = (
     <Fragment>
         <FontAwesomeIcon icon={faCode} size="4x" style={{color: '#33b38d'}}/>
         <h3 id='h3_skills' className="pt-2">Programming</h3>
-        <p id='p_skills'><strong>Python</strong>, JavaScript, C++, git, SQL</p>
+        <p id='p_skills'>
+            <strong><a rel="noreferrer" target="_blank" href="https://www.python.org/" id='skill_link'>Python</a></strong>, <strong><a rel="noreferrer" target="_blank" href="https://pandas.pydata.org/" id='skill_link'>Pandas</a></strong>, <a rel="noreferrer" target="_blank" href="https://fr.wikipedia.org/wiki/Structured_Query_Language" id='skill_link'>SQL</a> (<a rel="noreferrer" target="_blank" href="https://www.postgresql.org/" id='skill_link'>Postgres</a>, <a rel="noreferrer" target="_blank" href="https://cloud.google.com/bigquery" id='skill_link'>Bigquery</a>), <a rel="noreferrer" target="_blank" href="https://developer.mozilla.org/fr/JavaScript" id='skill_link'>JavaScript</a>, <a rel="noreferrer" target="_blank" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" id='skill_link'>HTML</a>/<a rel="noreferrer" target="_blank" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" id='skill_link'>CSS</a>, <a rel="noreferrer" target="_blank" href="https://www.latex-project.org/help/documentation/" id='skill_link'>LaTeX</a>, <a rel="noreferrer" target="_blank" href="https://pytorch.org/" id='skill_link'>PyTorch</a>, <a rel="noreferrer" target="_blank" href="https://numpy.org/" id='skill_link'>Numpy</a>, <a rel="noreferrer" target="_blank" href="https://scikit-learn.org/" id='skill_link'>Scikit-learn</a>, <a rel="noreferrer" target="_blank" href="https://jupyter.org/" id='skill_link'>Jupyter</a>, <a rel="noreferrer" target="_blank" href="https://matplotlib.org/" id='skill_link'>Matplotlib</a>, <a rel="noreferrer" target="_blank" href="https://wandb.ai/site" id='skill_link'>Weights&Biases</a>, <a rel="noreferrer" target="_blank" href="https://www.reactjs.com/" id='skill_link'>React</a>, <a rel="noreferrer" target="_blank" href="https://nodejs.org/" id='skill_link'>Node.js</a>, <a rel="noreferrer" target="_blank" href="https://expressjs.com/" id='skill_link'>Express.js</a>
+        </p>
     </Fragment>
 );
 
@@ -21,7 +23,11 @@ const data_science = (
     <Fragment>
         <FontAwesomeIcon icon={faBrain} size="4x" style={{color: '#33b38d'}}/>
         <h3 id='h3_skills' className="pt-2">Data Science</h3>
-        <p id='p_skills'><strong>(Un)Supervised Learning</strong>, Artificial Neural Networks, Statistical Analysis</p>
+        <p id='p_skills'>
+            <strong>(Un)Supervised Learning</strong>,
+            Artificial Neural Networks,
+            Statistical Analysis
+        </p>
     </Fragment>
 );
 

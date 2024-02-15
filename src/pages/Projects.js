@@ -65,7 +65,9 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/projet_reseaux_neuronaux_illustration.webp" width="170" alt="project 1 illustration"/>
+                                    <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux'>
+                                        <img src="/assets/projet_reseaux_neuronaux_illustration.webp" width="170" alt="project 1 illustration" id="grow_div"/>
+                                    </a>
                                 </center>
                             </Col>
                         </Row>
@@ -92,7 +94,9 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_projet_comparaison.webp" width="170" alt="project 2 illustration"/>
+                                    <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_techniques_apprentissage'>
+                                        <img src="/assets/illustration_projet_comparaison.webp" width="170" alt="project 2 illustration" id="grow_div"/>
+                                    </a>
                                 </center>
                             </Col>
                         </Row>
@@ -120,7 +124,9 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/mario_qt.png" width="170" alt="project 3 illustration"/>
+                                    <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/MarioQT'>
+                                        <img src="/assets/mario_qt.png" width="170" alt="project 3 illustration" id="grow_div"/>
+                                    </a>
                                 </center>
                             </Col>
                         </Row>
@@ -148,7 +154,9 @@ const Projects = () => {
                             </Col>
                             <Col className="col-sm-4 col-12 my-3">
                                 <center>
-                                    <img src="/assets/illustration_main_robot.webp" width="170" alt="project 4 illustration"/>
+                                    <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/RobotHand'>
+                                        <img src="/assets/illustration_main_robot.webp" width="170" alt="project 4 illustration" id="grow_div"/>
+                                    </a>
                                     {/*<button id="iframe_button" onClick={robot_hand_swal_video_popup}>*/}
                                     {/*    <iframe id="iframe_icon" width="170" src="https://www.youtube.com/embed/cz-6uy60Rsc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>*/}
                                     {/*</button>*/}

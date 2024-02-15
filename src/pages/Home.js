@@ -29,7 +29,7 @@ const Home = () => {
                             </Row>
                             <Row className="pt-3">
                                 <Col>
-                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>PhD Student in data science</span>
+                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>Research Engineer in Machine Learning</span>
                                 </Col>
                             </Row>
                             <Row className="pt-2">

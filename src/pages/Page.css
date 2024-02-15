@@ -60,6 +60,14 @@ section {
     font-size: 13px;
 }
 
+#skill_link {
+    color: inherit;
+    text-decoration: inherit; /* no underline */
+}
+#skill_link:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-family: Montserrat,sans-serif;
     font-weight: 400;
