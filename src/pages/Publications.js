@@ -8,6 +8,7 @@ import {FaGithub, FaQuoteRight, FaRegFilePdf, FaYoutube} from "react-icons/fa";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
+import ReactGA from "react-ga4";
 
 const Publications = () => {
     const publicationsRef = useNav('Publications');
@@ -76,6 +77,11 @@ const Publications = () => {
         '}'
 
     function cite_article(citation) {
+        ReactGA.event({
+            category: "Citation",
+            action: "user hit citation button",
+        });
+
         Swal.fire({
             title: '<strong>Cite</strong>',
             icon: '',
