@@ -21,7 +21,7 @@ const Experience = () => {
                         <Row className="my-3">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://lelab.orange.fr/locations/1">
-                                    <img src="/assets/logo_orange.svg" alt="Orange logo" title="Orange Labs" id="grow_div" style={{'width': '50px'}}/>
+                                    <img src="/assets/logos/logo_orange.svg" alt="Orange logo" title="Orange Labs" id="grow_div" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
@@ -65,7 +65,7 @@ const Experience = () => {
                         <Row className="my-3">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://lelab.orange.fr/locations/1">
-                                    <img src="/assets/logo_orange.svg" alt="Orange logo" title="Orange Labs" id="grow_div" style={{'width': '50px'}}/>
+                                    <img src="/assets/logos/logo_orange.svg" alt="Orange logo" title="Orange Labs" id="grow_div" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
@@ -92,7 +92,7 @@ const Experience = () => {
                         </Row>
                         <Row className="flex">
                             <div className="p-2">
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/Rapport_Stage_Orange___Colin_Troisemaine.pdf">
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/Rapport_Stage_Orange___Colin_Troisemaine.pdf">
                                     <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                     <span>Report</span>
                                 </a>
@@ -104,7 +104,7 @@ const Experience = () => {
                         <Row className="my-3">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://worldline.com/">
-                                    <img src="/assets/logo_worldline.webp" alt="Worldline Global logo" title="Worldline Global" id="grow_div" style={{'width': '50px'}}/>
+                                    <img src="/assets/logos/logo_worldline.webp" alt="Worldline Global logo" title="Worldline Global" id="grow_div" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
@@ -131,7 +131,7 @@ const Experience = () => {
                         </Row>
                         <Row className="flex">
                             <div className="p-2">
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/Rapport_201920_DI4_TROISEMAINE_Colin.pdf">
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/Rapport_201920_DI4_TROISEMAINE_Colin.pdf">
                                     <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                     <span>Report</span>
                                 </a>
@@ -143,7 +143,7 @@ const Experience = () => {
                         <Row className="my-3 align-items-center">
                             <Col className="flex flex-grow-0">
                                 <a rel="noreferrer" target="_blank" href="https://www.ganil-spiral2.eu/">
-                                    <img src="/assets/ganil_logo.webp" alt="GANIL logo" title="GANIL" id="grow_div" style={{'width': '50px'}}/>
+                                    <img src="/assets/logos/ganil_logo.webp" alt="GANIL logo" title="GANIL" id="grow_div" style={{'width': '50px'}}/>
                                 </a>
                             </Col>
                             <Col className="align-content-start flex flex-grow-1">
@@ -169,7 +169,7 @@ const Experience = () => {
                         </Row>
                         <Row className="flex">
                             <div className="p-2">
-                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/Rapport_de_stage_ganil.pdf">
+                                <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/Rapport_de_stage_ganil.pdf">
                                     <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                     <span>Report</span>
                                 </a>

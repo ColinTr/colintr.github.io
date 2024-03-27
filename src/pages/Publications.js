@@ -147,7 +147,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2311.05440.pdf" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2024_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
@@ -181,7 +181,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2306.12919.pdf" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ECML_PKDD_2023_Demo_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
@@ -221,7 +221,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2302.12028.pdf" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
@@ -252,7 +252,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2211.16352" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
@@ -286,7 +286,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2209.01217" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ICKG_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
@@ -320,7 +320,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://arxiv.org/pdf/2112.03703" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
