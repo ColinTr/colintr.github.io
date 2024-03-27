@@ -320,7 +320,7 @@ const Publications = () => {
                                     </button>
                                 </Col>
                                 <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                         <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                         <span>PDF</span>
                                     </a>
