@@ -7,9 +7,37 @@ import {Col, Container, Row} from "react-bootstrap";
 
 import 'font-awesome/css/font-awesome.min.css';
 import '../academicons/css/academicons.min.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBrain} from "@fortawesome/free-solid-svg-icons";
+import ReactGA from "react-ga4";
+import Swal from "sweetalert2";
+import withReactContent from 'sweetalert2-react-content'
+import {StlViewer} from "react-stl-viewer";
+
+const MySwal = withReactContent(Swal)
 
 const Home = () => {
     const homeRef = useNav('Home');
+
+    function open_brain_model() {
+        ReactGA.event({
+            category: "Brain",
+            action: "User hit brain button",
+        });
+
+        MySwal.fire({
+            html: <Row className="pt-3 mb-2 container-fluid justify-content-center">
+                <Col className="d-flex col-auto px-2 justify-content-center">
+                    <StlViewer style={{top: 0, left: 0, width: '70vw', height: '70vh'}} orbitControls shadows url={'/assets/3d_brain_model.stl'} modelProps={{rotationX: 0.6}}/>
+                </Col>
+            </Row>,
+            title: "Autoportrait",
+            showCloseButton: true,
+            showConfirmButton: false,
+            width: '75vw',
+            height: '75vh',
+        })
+    }
 
     return (
         <section ref={homeRef} id='homeContainer'>
@@ -78,16 +106,14 @@ const Home = () => {
                                     </a>
                                 </Col>
                             </Row>
-                            {/*
                             <Row>
                                 <Col>
-                                    <button className="btn btn-outline-primary my-1 p-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}
-                                            onClick={() => window.open("/mario/Mario.html", "_blank")}>
-                                        <img src="/assets/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '30px'}}/>
+                                    <button className="btn btn-outline-primary my-1 p-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}} title="3D brain model"
+                                            onClick={() => open_brain_model()}>
+                                            <FontAwesomeIcon icon={faBrain} size="4x" style={{color: '#33b38d', 'width': '30px', 'height': '30px'}} className="py-0"/>
                                     </button>
                                 </Col>
                             </Row>
-                            */}
                         </center>
                     </Col>
                     <Col className="col-12 col-lg-8">
