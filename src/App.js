@@ -9,7 +9,7 @@ ReactGA.send({ hitType: "pageview", page: "/", title: "Home page" });
 
 function App() {
     return (
-        <div className='appContainer'>
+        <div className='appContainer' id="appContainer">
             <NavProvider>
                 <Nav />
                 <Main />

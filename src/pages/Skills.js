@@ -7,7 +7,7 @@ import { faCode, faLanguage, faBrain } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const programming = (
     <Fragment>
@@ -26,7 +26,8 @@ const data_science = (
         <p id='p_skills'>
             <strong>(Un)Supervised Learning</strong>,
             Artificial Neural Networks,
-            Statistical Analysis
+            Statistical Analysis,
+            Tabular Data
         </p>
     </Fragment>
 );
@@ -43,28 +44,26 @@ const Skills = () => {
     const skillsRef = useNav('Skills');
 
     return (
-        <section ref={skillsRef} id='skillsContainer'>
-            <Container className="text-center">
-                <Row>
-                    <Col>
-                        <h1>Skills</h1>
-                    </Col>
-                </Row>
-                <div className="row">
-                    <div className="col-sm-4 order-md-last py-3">
-                        <span className="d-md-inline d-none">{language}</span>
-                        <span className="d-md-none d-inline">{programming}</span>
-                    </div>
-                    <div className="col-sm-4 order-1 py-3">
-                        <span className="d-md-inline d-none">{data_science}</span>
-                        <span className="d-md-none d-inline">{language}</span>
-                    </div>
-                    <div className="col-sm-4 py-3">
-                        <span className="d-md-inline d-none">{programming}</span>
-                        <span className="d-md-none d-inline">{data_science}</span>
-                    </div>
+        <section ref={skillsRef} id='skillsContainer' className="text-center">
+            <Row>
+                <Col className="pb-3">
+                    <h1>Skills</h1>
+                </Col>
+            </Row>
+            <div className="row">
+                <div className="col-sm-4 order-md-last">
+                    <span className="d-md-inline d-none">{language}</span>
+                    <span className="d-md-none d-inline">{programming}</span>
                 </div>
-            </Container>
+                <div className="col-sm-4 order-1">
+                    <span className="d-md-inline d-none">{data_science}</span>
+                    <span className="d-md-none d-inline">{language}</span>
+                </div>
+                <div className="col-sm-4">
+                    <span className="d-md-inline d-none">{programming}</span>
+                    <span className="d-md-none d-inline">{data_science}</span>
+                </div>
+            </div>
         </section>
     );
 };

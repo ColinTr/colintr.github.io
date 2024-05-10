@@ -2,7 +2,7 @@ import React from 'react';
 import { Home, Skills, Projects, Publications, Experience } from './';
 
 const Main = () => (
-    <main>
+    <main id="main-container">
         <Home />
         <Skills />
         <Publications />
