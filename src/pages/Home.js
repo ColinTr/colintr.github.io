@@ -5,7 +5,6 @@ import '../academicons/css/academicons.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { useNav } from '../customHooks/useNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {StlViewer} from "react-stl-viewer";
 import React, {useState} from 'react';
 import ReactGA from "react-ga4";
 
@@ -18,7 +17,6 @@ const Home = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [modelLoadPercent, setModelLoadPercent] = useState(0)
-    const [modalContent, setModalContent] = useState(<div/>)
     const openModal = () => { setIsModalOpen(true); };
     const closeModal = () => { setIsModalOpen(false); };
 
@@ -43,7 +41,6 @@ const Home = () => {
             },
         }));
         await res.blob();  // Returns the blob object
-        setModalContent(<StlViewer style={{width: '100%', height: '100%', minWidth:0, minHeight: 0}} orbitControls shadows url={'/assets/3d_brain_model.stl'} modelProps={{rotationX: 0.57}}/>)
     }
 
     function open_brain_model() {
@@ -57,7 +54,6 @@ const Home = () => {
             <div style={{padding:0}}>
                 <BrainModal
                     isModalOpen={isModalOpen}
-                    modalContent={modalContent}
                     modelLoadPercent={modelLoadPercent}
                     onClose={closeModal}
                 />
