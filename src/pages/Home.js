@@ -37,13 +37,13 @@ const Home = () => {
                     loaded += value.byteLength;
                     setModelLoadPercent(Math.round(loaded/total*100))
                     controller.enqueue(value);
-                    // await new Promise(resolve => setTimeout(resolve, 100))
+                    // await new Promise(resolve => setTimeout(resolve, 1000))
                 }
                 controller.close();
             },
         }));
         await res.blob();  // Returns the blob object
-        setModalContent(<StlViewer style={{top: 0, left: 0, width: '100%', height: '100%'}} orbitControls shadows url={'/assets/3d_brain_model.stl'} modelProps={{rotationX: 0.6}}/>)
+        setModalContent(<StlViewer style={{width: '100%', height: '100%', minWidth:0, minHeight: 0}} orbitControls shadows url={'/assets/3d_brain_model.stl'} modelProps={{rotationX: 0.57}}/>)
     }
 
     function open_brain_model() {
