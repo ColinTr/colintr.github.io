@@ -14,12 +14,15 @@ const Publications = () => {
     const publicationsRef = useNav('Publications');
 
     const article_6_citation =
-        '@article{tr2023practical,\n' +
+        '@article{tr2024practical,\n' +
         '   title = {A Practical Approach to Novel Class Discovery in Tabular Data},\n' +
         '   author = {Troisemaine, Colin and Reiffers{-}Masson, Alexandre and Gosselin, St{\'{e}}phane and Lemaire, Vincent and Vaton, Sandrine},\n' +
-        '   journal = {ArXiv},\n' +
-        '   year = {2023},\n' +
-        '   doi = {10.48550/ARXIV.2311.05440}\n' +
+        '   journal = {Data Mining and Knowledge Discovery},\n' +
+        '   year = {2024},\n' +
+        '   month = {May},\n' +
+        '   day = {31},\n' +
+        '   issn = {1573-756X},\n' +
+        '   doi = {10.1007/s10618-024-01025-y}\n' +
         '}'
 
     const article_5_citation =
@@ -129,13 +132,13 @@ const Publications = () => {
                     <Row className="my-3">
                         <div>
                             <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/375715106_A_Practical_Approach_to_Novel_Class_Discovery_in_Tabular_Data">
+                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://link.springer.com/article/10.1007/s10618-024-01025-y">
                                 A Practical Approach to Novel Class Discovery in Tabular Data
                             </a>
                         </div>
                         <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://arxiv.org/">
-                                Arxiv preprint
+                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://link.springer.com/journal/10618">
+                                Data Mining and Knowledge Discovery
                             </a>
                         </div>
                         <Row className="pt-1">
@@ -146,7 +149,7 @@ const Publications = () => {
                                 </button>
                             </Col>
                             <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2024_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/DAMI_2024_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
                                     <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                     <span>PDF</span>
                                 </a>
@@ -163,7 +166,7 @@ const Publications = () => {
                     <Row className="my-3">
                         <div>
                             <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/373988863_An_Interactive_Interface_for_Novel_Class_Discovery_in_Tabular_Data">
+                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-43430-3_18">
                                 An Interactive Interface for Novel Class Discovery in Tabular Data
                             </a>
                         </div>
@@ -268,7 +271,7 @@ const Publications = () => {
                     <Row className="my-3">
                         <div>
                             <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/368313618_A_Method_for_Discovering_Novel_Classes_in_Tabular_Data">
+                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10030036">
                                 A Method for Discovering Novel Classes in Tabular Data
                             </a>
                         </div>
