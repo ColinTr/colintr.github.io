@@ -130,210 +130,260 @@ const Publications = () => {
                 <Col className="col-12 col-lg-9">
 
                     <Row className="my-3">
-                        <div>
-                            <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://link.springer.com/article/10.1007/s10618-024-01025-y">
-                                A Practical Approach to Novel Class Discovery in Tabular Data
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/PracticalNCD'>
+                                <img src="/assets/papers_illustrations/practical_ncd_principle.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="PracticalNCD, NCD-k-means principle" id="grow_div"/>
                             </a>
-                        </div>
-                        <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://link.springer.com/journal/10618">
-                                Data Mining and Knowledge Discovery
-                            </a>
-                        </div>
-                        <Row className="pt-1">
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_6_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/DAMI_2024_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://link.springer.com/article/10.1007/s10618-024-01025-y">
+                                    A Practical Approach to Novel Class Discovery in Tabular Data
                                 </a>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/PracticalNCD" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://link.springer.com/journal/10618">
+                                    Data Mining and Knowledge Discovery
                                 </a>
-                            </Col>
-                        </Row>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_6_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/DAMI_2024_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/PracticalNCD" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
                     </Row>
 
-                    <Row className="my-3">
-                        <div>
-                            <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-43430-3_18">
-                                An Interactive Interface for Novel Class Discovery in Tabular Data
-                            </a>
-                        </div>
-                        <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://2023.ecmlpkdd.org/">
-                                European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2023)
-                            </a>
-                        </div>
-                        <Row className="pt-1">
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_5_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ECML_PKDD_2023_Demo_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
-                                </a>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaYoutube/></span>
-                                    <span>Video</span>
-                                </a>
-                            </Col>
-                        </Row>
-                    </Row>
+                    <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <div>
-                            <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://arxiv.org/abs/2302.12028">
-                                Novel Class Discovery: an Introduction and Key Concepts
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/InteractiveClustering'>
+                                <img src="/assets/papers_illustrations/InteractiveClusteringInterfaceAnnotated.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Interactive Clustering Interface" id="grow_div"/>
                             </a>
-                        </div>
-                        <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://arxiv.org/">
-                                Arxiv preprint
-                            </a>
-                        </div>
-                        <Row className="pt-1">
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_4_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-43430-3_18">
+                                    An Interactive Interface for Novel Class Discovery in Tabular Data
                                 </a>
-                            </Col>
-                        </Row>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://2023.ecmlpkdd.org/">
+                                    European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2023)
+                                </a>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_5_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ECML_PKDD_2023_Demo_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaYoutube/></span>
+                                        <span>Video</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
                     </Row>
 
-                    <Row className="my-3">
-                        <div>
-                            <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/365849981_Decouvrir_de_nouvelles_classes_dans_des_donnees_tabulaires">
-                                Découvrir de nouvelles classes dans des données tabulaires
-                            </a>
-                        </div>
-                        <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://egc2023.sciencesconf.org/">
-                                French-speaking conference on Knowledge Extraction and Management (EGC 2023)
-                            </a>
-                        </div>
-                        <div className="pt-1" style={{color:'rgba(0,0,0,.54)'}}>
-                            <i>Translation of the article "A Method for Discovering Novel Classes in Tabular Data"</i>
-                        </div>
-                        <Row className="pt-1">
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_3_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
-                                </a>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
-                                </a>
-                            </Col>
-                        </Row>
-                    </Row>
+                    <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <div>
-                            <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10030036">
-                                A Method for Discovering Novel Classes in Tabular Data
-                            </a>
-                        </div>
-                        <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://ickg2022.zhonghuapu.com/">
-                                IEEE International Conference on Knowledge Graph (ICKG 2022)
-                            </a>
-                        </div>
-                        <Row className="pt-1">
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_2_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ICKG_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                            <img src="/assets/papers_illustrations/NCD_Setup_Illustration.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Interactive Clustering Interface"/>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://arxiv.org/abs/2302.12028">
+                                    Novel Class Discovery: an Introduction and Key Concepts
                                 </a>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://arxiv.org/">
+                                    Arxiv preprint
                                 </a>
-                            </Col>
-                        </Row>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_4_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
                     </Row>
 
+                    <center><hr style={{width: '90%'}}/></center>
+
                     <Row className="my-3">
-                        <div>
-                            <FontAwesomeIcon icon={faFileAlt}/>
-                            <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/359210514_Construction_de_variables_a_l'aide_de_classifieurs_comme_aide_a_la_regression_une_evaluation_empirique">
-                                Construction de variables à l’aide de classifieurs comme aide à la régression: une évaluation empirique
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/TabularNCD'>
+                                <img src="/assets/papers_illustrations/TabularNCD_step_3_Francais.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="TabularNCD architecture (en français)" id="grow_div"/>
                             </a>
-                        </div>
-                        <div className="pt-1">
-                            <a id="article_metadata" rel="noreferrer" target="_blank" href="https://egc2022.univ-tours.fr/">
-                                French-speaking conference on Knowledge Extraction and Management (EGC 2022)
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/365849981_Decouvrir_de_nouvelles_classes_dans_des_donnees_tabulaires">
+                                    Découvrir de nouvelles classes dans des données tabulaires
+                                </a>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://egc2023.sciencesconf.org/">
+                                    French-speaking conference on Knowledge Extraction and Management (EGC 2023)
+                                </a>
+                            </div>
+                            <div className="pt-1" style={{color:'rgba(0,0,0,.54)'}}>
+                                <i>Translation of the article "A Method for Discovering Novel Classes in Tabular Data"</i>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_3_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                    <center><hr style={{width: '90%'}}/></center>
+
+                    <Row className="my-3">
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/TabularNCD'>
+                                <img src="/assets/papers_illustrations/TabularNCD_step_3.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="TabularNCD architecture" id="grow_div"/>
                             </a>
-                        </div>
-                        <Row className="pt-1">
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                <button id="custom_button" onClick={() => cite_article(article_1_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                    <span>Cite</span>
-                                </button>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                    <span>PDF</span>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10030036">
+                                    A Method for Discovering Novel Classes in Tabular Data
                                 </a>
-                            </Col>
-                            <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/ClassificationForRegression" style={{display:"flex", alignItems:"center"}}>
-                                    <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                    <span>Code</span>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://ickg2022.zhonghuapu.com/">
+                                    IEEE International Conference on Knowledge Graph (ICKG 2022)
                                 </a>
-                            </Col>
-                        </Row>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_2_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ICKG_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                    <center><hr style={{width: '90%'}}/></center>
+
+                    <Row className="my-3">
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/ClassificationForRegression'>
+                                <img src="/assets/papers_illustrations/egc_2022_principe_general.png" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Principe général" id="grow_div"/>
+                            </a>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
+                            <div>
+                                <FontAwesomeIcon icon={faFileAlt}/>
+                                <a className="px-2" id="article_title" rel="noreferrer" target="_blank" href="https://www.researchgate.net/publication/359210514_Construction_de_variables_a_l'aide_de_classifieurs_comme_aide_a_la_regression_une_evaluation_empirique">
+                                    Construction de variables à l’aide de classifieurs comme aide à la régression: une évaluation empirique
+                                </a>
+                            </div>
+                            <div className="pt-1">
+                                <a id="article_metadata" rel="noreferrer" target="_blank" href="https://egc2022.univ-tours.fr/">
+                                    French-speaking conference on Knowledge Extraction and Management (EGC 2022)
+                                </a>
+                            </div>
+                            <Row className="pt-1">
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                    <button id="custom_button" onClick={() => cite_article(article_1_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
+                                        <span>Cite</span>
+                                    </button>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
+                                        <span>PDF</span>
+                                    </a>
+                                </Col>
+                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/ClassificationForRegression" style={{display:"flex", alignItems:"center"}}>
+                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
+                                        <span>Code</span>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
                     </Row>
 
                 </Col>

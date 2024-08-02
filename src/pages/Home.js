@@ -50,7 +50,7 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div id='homeContainer'>
             <div style={{padding:0}}>
                 <BrainModal
                     isModalOpen={isModalOpen}
