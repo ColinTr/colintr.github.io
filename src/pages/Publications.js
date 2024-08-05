@@ -148,23 +148,19 @@ const Publications = () => {
                                 </a>
                             </div>
                             <Row className="pt-1">
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
-                                    <button id="custom_button" onClick={() => cite_article(article_6_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                        <span>Cite</span>
+                                <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexGrow: 1 }}>
+                                    <button id="custom_button" onClick={() => cite_article(article_6_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{ display: 'flex', alignItems: 'center' }}>
+                                        <FaQuoteRight style={{marginRight: "3px"}}/> Cite
                                     </button>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/DAMI_2024_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                        <span>PDF</span>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/DAMI_2024_Colin.pdf" style={{ display: 'flex', alignItems: 'center' }}>
+                                        <FaRegFilePdf style={{marginRight: "3px"}}/> PDF
+                                    </a>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/PracticalNCD" style={{ display: 'flex', alignItems: 'center' }}>
+                                        <FaGithub style={{marginRight: "3px"}}/> Code
                                     </a>
                                 </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/PracticalNCD" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                        <span>Code</span>
-                                    </a>
+                                <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">
+                                    <p id="education_p_2" className="my-1">May 2024</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -191,29 +187,22 @@ const Publications = () => {
                                 </a>
                             </div>
                             <Row className="pt-1">
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexGrow: 1 }}>
                                     <button id="custom_button" onClick={() => cite_article(article_5_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                        <span>Cite</span>
+                                        <FaQuoteRight style={{marginRight: "3px"}}/> Cite
                                     </button>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ECML_PKDD_2023_Demo_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                        <span>PDF</span>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ECML_PKDD_2023_Demo_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <FaRegFilePdf style={{marginRight: "3px"}}/> PDF
                                     </a>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
                                     <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                        <span>Code</span>
+                                        <FaGithub style={{marginRight: "3px"}}/> Code
+                                    </a>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
+                                        <FaYoutube style={{marginRight: "3px"}}/> Video
                                     </a>
                                 </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaYoutube/></span>
-                                        <span>Video</span>
-                                    </a>
+                                <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">
+                                    <p id="education_p_2" className="my-1">Sept. 2023</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -238,17 +227,16 @@ const Publications = () => {
                                 </a>
                             </div>
                             <Row className="pt-1">
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexGrow: 1 }}>
                                     <button id="custom_button" onClick={() => cite_article(article_4_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                        <span>Cite</span>
+                                        <FaQuoteRight style={{marginRight: "3px"}}/> Cite
                                     </button>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                        <span>PDF</span>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ArXiv_Preprint_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <FaRegFilePdf style={{marginRight: "3px"}}/> PDF
                                     </a>
+                                </Col>
+                                <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">
+                                    <p id="education_p_2" className="my-1">Feb. 2023</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -278,23 +266,19 @@ const Publications = () => {
                                 <i>Translation of the article "A Method for Discovering Novel Classes in Tabular Data"</i>
                             </div>
                             <Row className="pt-1">
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexGrow: 1 }}>
                                     <button id="custom_button" onClick={() => cite_article(article_3_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                        <span>Cite</span>
+                                        <FaQuoteRight style={{marginRight:"3px"}}/> Cite
                                     </button>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                        <span>PDF</span>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2023_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <FaRegFilePdf style={{marginRight:"3px"}}/> PDF
                                     </a>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
                                     <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                        <span>Code</span>
+                                        <FaGithub style={{marginRight:"3px"}}/> Code
                                     </a>
+                                </Col>
+                                <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">
+                                    <p id="education_p_2" className="my-1">Jan. 2023</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -321,23 +305,19 @@ const Publications = () => {
                                 </a>
                             </div>
                             <Row className="pt-1">
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexGrow: 1 }}>
                                     <button id="custom_button" onClick={() => cite_article(article_2_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                        <span>Cite</span>
+                                        <FaQuoteRight style={{marginRight:"3px"}}/> Cite
                                     </button>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ICKG_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                        <span>PDF</span>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/ICKG_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <FaRegFilePdf style={{marginRight:"3px"}}/> PDF
                                     </a>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
                                     <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/TabularNCD" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                        <span>Code</span>
+                                        <FaGithub style={{marginRight:"3px"}}/> Code
                                     </a>
+                                </Col>
+                                <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">
+                                    <p id="education_p_2" className="my-1">Nov. 2022</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -364,23 +344,19 @@ const Publications = () => {
                                 </a>
                             </div>
                             <Row className="pt-1">
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingRight: "5px"}}>
+                                <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexGrow: 1 }}>
                                     <button id="custom_button" onClick={() => cite_article(article_1_citation)} className="btn btn-outline-primary my-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaQuoteRight/></span>
-                                        <span>Cite</span>
+                                        <FaQuoteRight style={{marginRight:"3px"}}/> Cite
                                     </button>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0, paddingRight: "5px"}}>
-                                    <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                        <span>PDF</span>
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/publications/EGC_2022_Colin.pdf" style={{display:"flex", alignItems:"center"}}>
+                                        <FaRegFilePdf style={{marginRight:"3px"}}/> PDF
                                     </a>
-                                </Col>
-                                <Col className="d-flex col-auto justify-content-center" style={{paddingLeft: 0}}>
                                     <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/ClassificationForRegression" style={{display:"flex", alignItems:"center"}}>
-                                        <span style={{marginRight:"3px"}}><FaGithub/></span>
-                                        <span>Code</span>
+                                        <FaGithub style={{marginRight:"3px"}}/> Code
                                     </a>
+                                </Col>
+                                <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">
+                                    <p id="education_p_2" className="my-1">Jan. 2022</p>
                                 </Col>
                             </Row>
                         </Col>

@@ -40,7 +40,7 @@ const Experience = () => {
                             The aim here is to uncover the missing diagnostics from this heterogeneous set of tabular data with a purely <i>machine learning</i> approach.
                             <br/>
                             <br/>
-                            <ul>
+                            <ul style={{marginBottom: 0}}>
                                 <li>Developed 4 original techniques to discover novel classes in an unlabeled set of tabular data.</li>
                                 <li>Presented complex concepts to diverse audiences through accessible presentations at conferences.</li>
                                 <li>Realized an extensive state of the art on novel class discovery techniques, which received 10 citations in one year.</li>
@@ -82,7 +82,7 @@ const Experience = () => {
                             The aim of this internship was to take advantage of the performance of state-of-the-art classification models such as Random Forest and XGBoost to create descriptive variables that will improve the performance of regression models.
                             <br/>
                             <br/>
-                            <ul>
+                            <ul style={{marginBottom: 0}}>
                                 <li>Designed a new way to create descriptive features to improve regression performance.</li>
                                 <li>Developed a parametric framework that can make use of 4 different classification models to generate features to improve the performance of 5 regression models.</li>
                                 <li>Published an analysis of the results along a positioning to the SOTA in a 12-page conference paper.</li>
@@ -122,7 +122,7 @@ const Experience = () => {
                             In addition, the proprietary object type used makes it difficult to interpret the content of the messages.
                             <br/>
                             <br/>
-                            <ul>
+                            <ul style={{marginBottom: 0}}>
                                 <li>Developed an interpretable log generation system to simplify troubleshooting.</li>
                                 <li>Packaged an application in a Docker container and designed integration tests for the same project.</li>
                             </ul>
@@ -160,7 +160,7 @@ const Experience = () => {
                             It is home to many researchers, whose computers and complex equipment require constant maintenance to ensure optimal functionality.
                             <br/>
                             <br/>
-                            <ul>
+                            <ul style={{marginBottom: 0}}>
                                 <li>Discovered the management of a computer park in a large company.</li>
                                 <li>Configured, deployed and troubleshooted users' computers.</li>
                             </ul>
