@@ -1,8 +1,19 @@
-# How to deploy the website updates :
+# Resume website
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A personal resume website built with React.js and bootstrap.
+
+## 1. To tart the website in development mode
+
+> npm run start
+
+This will start a web server locally on http://localhost:3000/ by default, where your modifications to the source code will update the page automatically.
+
+## 2. To deploy the website updates :
 
 > npm run deploy
 
-Easy as that !
+This will build an optimized production build and deploy it to the <i>gh-pages</i> branch of your github-pages repository.
 
-# Credits :
-My thanks to the blogpost from Daniel Shapiro on medium.com for the navbar : https://medium.com/geekculture/scrollable-single-page-site-navigation-with-react-custom-hooks-4e7af716f6b1
+Don't forget to also commit and push your updates to the source code to another branch!

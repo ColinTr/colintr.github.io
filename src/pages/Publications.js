@@ -130,7 +130,7 @@ const Publications = () => {
                 <Col className="col-12 col-lg-9">
 
                     <Row className="my-3">
-                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small">
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/PracticalNCD'>
                                 <img src="/assets/papers_illustrations/practical_ncd_principle.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="PracticalNCD, NCD-k-means principle" id="grow_div"/>
                             </a>
@@ -173,7 +173,7 @@ const Publications = () => {
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small" xs={12} sm={3}>
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/InteractiveClustering'>
                                 <img src="/assets/papers_illustrations/InteractiveClusteringInterfaceAnnotated.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Interactive Clustering Interface" id="grow_div"/>
                             </a>
@@ -222,7 +222,7 @@ const Publications = () => {
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small" xs={12} sm={3}>
                             <img src="/assets/papers_illustrations/NCD_Setup_Illustration.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Interactive Clustering Interface"/>
                         </Col>
                         <Col xs={12} sm={9} className="order-1 order-sm-2">
@@ -257,7 +257,7 @@ const Publications = () => {
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small" xs={12} sm={3}>
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/TabularNCD'>
                                 <img src="/assets/papers_illustrations/TabularNCD_step_3_Francais.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="TabularNCD architecture (en français)" id="grow_div"/>
                             </a>
@@ -303,7 +303,7 @@ const Publications = () => {
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small" xs={12} sm={3}>
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/TabularNCD'>
                                 <img src="/assets/papers_illustrations/TabularNCD_step_3.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="TabularNCD architecture" id="grow_div"/>
                             </a>
@@ -346,7 +346,7 @@ const Publications = () => {
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1" xs={12} sm={3}>
+                        <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small" xs={12} sm={3}>
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/ClassificationForRegression'>
                                 <img src="/assets/papers_illustrations/egc_2022_principe_general.png" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Principe général" id="grow_div"/>
                             </a>

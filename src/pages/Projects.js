@@ -42,6 +42,7 @@ const Projects = () => {
                     <h1>Projects</h1>
                 </Col>
                 <Col className="col-12 col-lg-9">
+
                     <Row className="my-3">
                         <Col xs={12} sm={9}>
                             <h3>Active learning for deep neural nets</h3>
@@ -49,7 +50,7 @@ const Projects = () => {
                                 Comparison of 3 active learning selection criteria: Random sampling, Uncertainty sampling and Diverse Mini Batch sampling on the two deep neural networks VGGNet16 and LeNet and on the two databases MNIST and CIFAR10.
                             </p>
                             <Row>
-                                <Col className="col-9">
+                                <Col className="flex-grow-1">
                                     <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="/assets/reports/TROISEMAINE_BOUCHARD_INACIO_Rapport_Projet_de_Session_IFT780.pdf">
                                         <FaRegFilePdf/> Report
                                     </a>
@@ -57,14 +58,14 @@ const Projects = () => {
                                         <FontAwesomeIcon icon={faGithub}/> Code
                                     </a>
                                 </Col>
-                                <Col className="col-3 d-flex align-items-center justify-content-end">
+                                <Col xs="12" sm="auto" className="d-flex align-items-center">
                                     <p id="education_p_2" className="my-1">Apr. 2021</p>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center">
+                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux'>
-                                <img src="/assets/projects_illustrations/projet_reseaux_neuronaux_illustration.webp" width="170" alt="project 1 illustration" id="grow_div"/>
+                                <img src="/assets/projects_illustrations/projet_reseaux_neuronaux_illustration.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} width="170" alt="project 1 illustration" id="grow_div"/>
                             </a>
                         </Col>
                     </Row>
@@ -78,7 +79,7 @@ const Projects = () => {
                                 Comparison of 6 common classification methods and review of the good practices of machine learning.
                             </p>
                             <Row>
-                                <Col className="col-9">
+                                <Col className="flex-grow-1">
                                     <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="/assets/reports/Rapport_projet_de_session_TROISEMAINE_LEVIEUX.pdf">
                                         <FaRegFilePdf/> Report
                                     </a>
@@ -86,14 +87,14 @@ const Projects = () => {
                                         <FontAwesomeIcon icon={faGithub}/> Code
                                     </a>
                                 </Col>
-                                <Col className="col-3 d-flex align-items-center justify-content-end">
+                                <Col xs="12" sm="auto" className="d-flex align-items-center">
                                     <p id="education_p_2" className="my-1">Dec. 2020</p>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center">
+                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_techniques_apprentissage'>
-                                <img src="/assets/projects_illustrations/illustration_projet_comparaison.webp" width="170" alt="project 2 illustration" id="grow_div"/>
+                                <img src="/assets/projects_illustrations/illustration_projet_comparaison.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 2 illustration" id="grow_div"/>
                             </a>
                         </Col>
                     </Row>
@@ -107,7 +108,7 @@ const Projects = () => {
                                 This is a playable level editor in the style of Super Mario Bros Nes. The user can design large levels before playing or even sharing them. It was developed using the C++ API <a rel="noreferrer" target="_blank" href="https://www.qt.io/" style={{color: '#33b38d'}}>QT</a>, while adhering to the <a rel="noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" style={{color: '#33b38d'}}>Model–view–controller</a> design patern.
                             </p>
                             <Row>
-                                <Col className="col-9">
+                                <Col className="flex-grow-1">
                                     <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={() => window.open("/mario/Mario.html", "_blank")}>
                                         <img src="/assets/projects_illustrations/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
                                     </button>
@@ -116,14 +117,14 @@ const Projects = () => {
                                         <FontAwesomeIcon icon={faGithub}/> Code
                                     </a>
                                 </Col>
-                                <Col className="col-3 d-flex align-items-center justify-content-end">
+                                <Col xs="12" sm="auto" className="d-flex align-items-center">
                                     <p id="education_p_2" className="my-1">Jul. 2020</p>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center">
+                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/MarioQT'>
-                                <img src="/assets/projects_illustrations/mario_qt.png" width="170" alt="project 3 illustration" id="grow_div"/>
+                                <img src="/assets/projects_illustrations/mario_qt.png" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 3 illustration" id="grow_div"/>
                             </a>
                         </Col>
                     </Row>
@@ -137,7 +138,7 @@ const Projects = () => {
                                 Conception on <a rel="noreferrer" target="_blank" href="http://www.3ds.com/products/catia/" style={{color: '#33b38d'}}>Catia</a> and realization by 3D printing and laser cutting. Independent control of each finger using servomotors and instructions sent over Bluetooth with a custom android application.
                             </p>
                             <Row>
-                                <Col className="col-9">
+                                <Col className="flex-grow-1">
                                     <button id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm" onClick={robot_hand_swal_video_popup}><FontAwesomeIcon icon={faYoutube}/> Demo</button>
                                     <a id="custom_button" className="btn btn-outline-primary my-2 mx-1 btn-sm" rel="noreferrer" target="_blank" href="/assets/reports/Rapport_Projet_S4_Troisemaine_Levieux.pdf">
                                         <FaRegFilePdf/> Report
@@ -146,14 +147,14 @@ const Projects = () => {
                                         <FontAwesomeIcon icon={faGithub}/> Code
                                     </a>
                                 </Col>
-                                <Col className="col-3 d-flex align-items-center justify-content-end">
+                                <Col xs="12" sm="auto" className="d-flex align-items-center">
                                     <p id="education_p_2" className="my-1">Apr. 2018</p>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex my-3 justify-content-center align-items-center">
+                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
                             <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/RobotHand'>
-                                <img src="/assets/projects_illustrations/illustration_main_robot.webp" width="170" alt="project 4 illustration" id="grow_div"/>
+                                <img src="/assets/projects_illustrations/illustration_main_robot.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 4 illustration" id="grow_div"/>
                             </a>
                         </Col>
                     </Row>

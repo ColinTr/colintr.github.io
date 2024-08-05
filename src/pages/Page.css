@@ -135,3 +135,15 @@ h1 {
 #grow_div:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 576px) {
+    .padding_when_extra_small {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .padding_when_small {
+        padding-top: 20px;
+    }
+}
