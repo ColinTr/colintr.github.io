@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavContext } from '../context/NavContext';
+import { NavContext } from './NavContext';
 
 const NavLink = ({ navLinkId, scrollToId }) => {
     const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);

@@ -44,8 +44,12 @@ const Projects = () => {
                 <Col className="col-12 col-lg-9">
 
                     <Row className="my-3">
-                        <Col xs={12} sm={9}>
-                            <div></div>
+                        <Col xs={12} sm={3} className="order-2 order-sm-1 d-flex justify-content-center align-items-center padding_when_extra_small">
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux'>
+                                <img src="/assets/projects_illustrations/projet_reseaux_neuronaux_illustration.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} width="170" alt="project 1 illustration" id="grow_div"/>
+                            </a>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
                             <h3>Active learning for deep neural nets</h3>
                             <p align="justify" className="my-1">
                                 Comparison of 3 active learning selection criteria: Random sampling, Uncertainty sampling and Diverse Mini Batch sampling on the two deep neural networks VGGNet16 and LeNet and on the two databases MNIST and CIFAR10.
@@ -64,17 +68,17 @@ const Projects = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
-                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_reseaux_neuronaux'>
-                                <img src="/assets/projects_illustrations/projet_reseaux_neuronaux_illustration.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} width="170" alt="project 1 illustration" id="grow_div"/>
-                            </a>
-                        </Col>
                     </Row>
 
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col xs={12} sm={9}>
+                        <Col xs={12} sm={3} className="order-2 order-sm-1 d-flex justify-content-center align-items-center padding_when_extra_small">
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_techniques_apprentissage'>
+                                <img src="/assets/projects_illustrations/illustration_projet_comparaison.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 2 illustration" id="grow_div"/>
+                            </a>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
                             <h3>Comparison of 6 classification methods</h3>
                             <p align="justify" className="my-1">
                                 Comparison of 6 common classification methods and review of the good practices of machine learning.
@@ -93,17 +97,17 @@ const Projects = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
-                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/Projet_de_session_techniques_apprentissage'>
-                                <img src="/assets/projects_illustrations/illustration_projet_comparaison.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 2 illustration" id="grow_div"/>
-                            </a>
-                        </Col>
                     </Row>
 
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col xs={12} sm={9}>
+                        <Col xs={12} sm={3} className="order-2 order-sm-1 d-flex justify-content-center align-items-center padding_when_extra_small">
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/MarioQT'>
+                                <img src="/assets/projects_illustrations/mario_qt.png" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 3 illustration" id="grow_div"/>
+                            </a>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
                             <h3>Playable C++ Mario level editor</h3>
                             <p align="justify" className="my-1">
                                 This is a playable level editor in the style of Super Mario Bros Nes. The user can design large levels before playing or even sharing them. It was developed using the C++ API <a rel="noreferrer" target="_blank" href="https://www.qt.io/" style={{color: '#33b38d'}}>QT</a>, while adhering to the <a rel="noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" style={{color: '#33b38d'}}>Model–view–controller</a> design patern.
@@ -125,17 +129,17 @@ const Projects = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
-                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/MarioQT'>
-                                <img src="/assets/projects_illustrations/mario_qt.png" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 3 illustration" id="grow_div"/>
-                            </a>
-                        </Col>
                     </Row>
 
                     <center><hr style={{width: '90%'}}/></center>
 
                     <Row className="my-3">
-                        <Col xs={12} sm={9}>
+                        <Col xs={12} sm={3} className="order-2 order-sm-1 d-flex justify-content-center align-items-center padding_when_extra_small">
+                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/RobotHand'>
+                                <img src="/assets/projects_illustrations/illustration_main_robot.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 4 illustration" id="grow_div"/>
+                            </a>
+                        </Col>
+                        <Col xs={12} sm={9} className="order-1 order-sm-2">
                             <h3>3D printed hand with Bluetooth control</h3>
                             <p align="justify" className="my-1">
                                 Conception on <a rel="noreferrer" target="_blank" href="http://www.3ds.com/products/catia/" style={{color: '#33b38d'}}>Catia</a> and realization by 3D printing and laser cutting. Independent control of each finger using servomotors and instructions sent over Bluetooth with a custom android application.
@@ -156,11 +160,6 @@ const Projects = () => {
                                     <p id="education_p_2" className="my-1">Apr. 2018</p>
                                 </Col>
                             </Row>
-                        </Col>
-                        <Col xs={12} sm={3} className="d-flex justify-content-center align-items-center padding_when_extra_small">
-                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/RobotHand'>
-                                <img src="/assets/projects_illustrations/illustration_main_robot.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="project 4 illustration" id="grow_div"/>
-                            </a>
                         </Col>
                     </Row>
                 </Col>

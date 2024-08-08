@@ -65,7 +65,7 @@ const Home = () => {
                             <Col className="col-12 col-lg-12 col-md-6 col-sm-6 text-center">
                                 <img src="/assets/profil_rond_medium.webp" className="img-fluid" alt="Profile" style={{maxWidth: '100%', maxHeight: '220px'}}/>
                             </Col>
-                            <Col className="col-12 col-lg-12 col-md-6 col-sm-6 text-center">
+                            <Col className="col-12 col-lg-12 col-md-6 col-sm-6 text-center" style={{lineHeight: "1.1em"}}>
                                 <Row className="pt-3">
                                     <span style={{color:'rgba(0,0,0)', fontSize: '35px'}}>Colin Troisemaine</span>
                                 </Row>
@@ -136,10 +136,10 @@ const Home = () => {
                                 In my spare time, I love playing chess ♞ and guitar 🎸, and exploring cool technologies like 3D printing 🖨️ and FPV drone flying 🚁.
                             </p>
                         </Row>
-                        <Row>
+                        <Row style={{lineHeight: "1.1em"}}>
                             <div className="col-md-4 pt-3">
                                 <h3 id="h3_home">Interests</h3>
-                                <ul>
+                                <ul style={{lineHeight: "1.1em"}}>
                                     <li><p id="education_p" className="my-1 pt-2">Artificial Neural Networks</p></li>
                                     <li><p id="education_p" className="my-1 pt-2">Unsupervised Learning</p></li>
                                     <li><p id="education_p" className="my-1 pt-2">Novel Class Discovery</p></li>
