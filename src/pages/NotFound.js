@@ -5,7 +5,7 @@ import '..//pages/Page.css'
 
 function NotFound() {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', textAlign: 'center'}}>
+        <div id="appContainer" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', textAlign: 'center'}}>
             <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>
                     404
