@@ -16,7 +16,7 @@ const BlogHeader = () => {
                 </Col>
                 <Col className="col-auto p-0">
                     <span className="linkCV">
-                        <a href="/blog">
+                        <a href="/#/blog">
                             Blog articles list
                         </a>
                     </span>

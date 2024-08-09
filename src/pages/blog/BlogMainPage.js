@@ -3,7 +3,6 @@ import ReactGA from "react-ga4";
 import Footer from "../Footer";
 import { Outlet, useLocation, matchPath } from 'react-router-dom';
 import BlogHeader from "./BlogHeader";
-
 import { getLatestBlogArticles } from './BlogPreview'
 import {Col, Row} from "react-bootstrap";
 
@@ -15,7 +14,7 @@ const BlogMainPage = () => {
     const isExactBlogRoute = matchPath({ path: '/blog', end: true }, location.pathname);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
+        <div id="appContainer" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
             <BlogHeader />
 
             <div  style={{maxWidth: "1200px", margin: "auto", width: "100%"}}>
