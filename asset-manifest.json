@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4395365.css",
-    "main.js": "/static/js/main.1300cc98.js",
+    "main.css": "/static/css/main.eca30b11.css",
+    "main.js": "/static/js/main.631441d6.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/academicons.svg": "/static/media/academicons.1c3d78b59e5ab55cbff6.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/academicons.woff": "/static/media/academicons.c8b8bfc0fed119707316.woff",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/academicons.eot": "/static/media/academicons.e8713c3132628422b2e5.eot",
-    "static/media/academicons.ttf": "/static/media/academicons.4f700bbf66a5f360ce35.ttf",
     "index.html": "/index.html",
-    "main.f4395365.css.map": "/static/css/main.f4395365.css.map",
-    "main.1300cc98.js.map": "/static/js/main.1300cc98.js.map"
+    "main.eca30b11.css.map": "/static/css/main.eca30b11.css.map",
+    "main.631441d6.js.map": "/static/js/main.631441d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4395365.css",
-    "static/js/main.1300cc98.js"
+    "static/css/main.eca30b11.css",
+    "static/js/main.631441d6.js"
   ]
 }
