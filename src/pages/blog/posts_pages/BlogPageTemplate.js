@@ -2,12 +2,12 @@ import React from "react";
 import {DiscussionEmbed} from "disqus-react";
 import {Container, Row} from "react-bootstrap";
 
-const UnderstandingTransformers = () => {
+const BlogPageTemplate = () => {
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
-                    <h1>Understanding Transformers</h1>
+                    <h1>Blog Page Template</h1>
                     Work in progress...
                 </div>
             </Row>
@@ -18,8 +18,8 @@ const UnderstandingTransformers = () => {
                     config={
                         {
                             url: window.location.href,
-                            identifier: "understanding_transformers",
-                            title: "Understanding Transformers",
+                            identifier: "3d_print_your_brain",
+                            title: "3D print your brain",
                             language: 'en'
                         }
                     }
@@ -29,4 +29,4 @@ const UnderstandingTransformers = () => {
     );
 };
 
-export default UnderstandingTransformers;
+export default BlogPageTemplate;

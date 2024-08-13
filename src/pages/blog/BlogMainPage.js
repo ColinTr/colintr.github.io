@@ -17,7 +17,7 @@ const BlogMainPage = () => {
         <div id="appContainer" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
             <BlogHeader />
 
-            <div  style={{maxWidth: "1200px", margin: "auto", width: "100%"}}>
+            <div style={{maxWidth: "1200px", margin: "auto", width: "100%"}}>
                 <section>
                     {/* Below is only displayed if you are on /blog */}
                     {isExactBlogRoute &&
