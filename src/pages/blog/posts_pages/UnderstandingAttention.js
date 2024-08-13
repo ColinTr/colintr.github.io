@@ -1,8 +1,10 @@
 import React from "react";
 import {DiscussionEmbed} from "disqus-react";
 import {Container, Row} from "react-bootstrap";
+import ChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
 
 const UnderstandingAttention = () => {
+    ChangeDocumentTitle("Colin | Understanding Attention")
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>

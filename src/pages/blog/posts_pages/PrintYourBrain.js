@@ -3,8 +3,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload} from "@fortawesome/free-solid-svg-icons";
 import { DiscussionEmbed } from 'disqus-react';
 import {Container, Row} from "react-bootstrap";
+import ChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
 
 const PrintYourBrain = () => {
+    ChangeDocumentTitle("Colin | 3D print your brain")
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>

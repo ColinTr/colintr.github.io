@@ -3,15 +3,19 @@ import ReactGA from "react-ga4";
 import Footer from "../Footer";
 import { Outlet, useLocation, matchPath } from 'react-router-dom';
 import BlogHeader from "./BlogHeader";
-import { getLatestBlogArticles } from './BlogPreview'
 import {Col, Row} from "react-bootstrap";
+import ChangeDocumentTitle from "../../utils/ChangeDocumentTitle";
+import {getLatestBlogArticles} from "./getLatestBlogArticles";
 
 ReactGA.initialize("G-R8XSGWP0YR");
 ReactGA.send({ hitType: "pageview", page: "/", title: "Blog page" });
 
 const BlogMainPage = () => {
-    const location = useLocation();
-    const isExactBlogRoute = matchPath({ path: '/blog', end: true }, location.pathname);
+    const isExactBlogRoute = matchPath({ path: '/blog', end: true }, useLocation().pathname);
+
+    if(isExactBlogRoute) {
+        ChangeDocumentTitle("Colin | Blog posts")
+    }
 
     return (
         <div id="appContainer" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
@@ -19,7 +23,7 @@ const BlogMainPage = () => {
 
             <div style={{maxWidth: "1200px", margin: "auto", width: "100%"}}>
                 <section>
-                    {/* Below is only displayed if you are on /blog */}
+                    {/* Below is only displayed if you are on /#/blog */}
                     {isExactBlogRoute &&
                         <div>
                             <h1>Colin Troisemaine's blog posts</h1>
@@ -35,7 +39,7 @@ const BlogMainPage = () => {
                             {getLatestBlogArticles()}
                         </div>
                     }
-                    {/* And this is the nested routes /blog/... */}
+                    {/* And this is the nested routes /#/blog/... */}
                     <Outlet />
                 </section>
             </div>
