@@ -1,16 +1,13 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBrain} from "@fortawesome/free-solid-svg-icons";
 import {Col, Row} from "react-bootstrap";
-import '../academicons/css/academicons.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { useNav } from '../customHooks/useNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useState} from 'react';
 import ReactGA from "react-ga4";
-
 import BrainModal from './BrainModal'
 import './Page.css';
-
 
 const Home = () => {
     const homeRef = useNav('Home');
@@ -110,7 +107,7 @@ const Home = () => {
                                     </Col>
                                     <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
                                         <a rel="noreferrer" target="_blank" href='/assets/CV_Latex_Colin_Troisemaine_English.pdf'>
-                                            <i className="ai ai-cv ai-2x" style={{color: "black"}} title="Curriculum Vitae"/>
+                                            <img src="/assets/logos/cv-icon.png" alt="ORCID iD" title="ORCID iD" style={{'width': '32px'}}/>
                                         </a>
                                     </Col>
                                 </Row>

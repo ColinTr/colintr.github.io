@@ -11,8 +11,18 @@ const PrintYourBrain = () => {
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
+                    <div style={{color: "#00000099"}}>
+                        <a rel="noreferrer" href="/" id="skill_link">Home</a>
+                        &nbsp;>&nbsp;
+                        <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
+                        &nbsp;>&nbsp;
+                        <a rel="noreferrer" href="/#/blog/3d_print_your_brain" id="skill_link">3D print your brain</a>
+                    </div>
+
                     <h1>3D print your brain</h1>
+
                     Work in progress...
+
                     <br/>
 
                     Download model (35.4 Mo)

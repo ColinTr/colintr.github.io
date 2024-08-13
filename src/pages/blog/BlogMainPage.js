@@ -18,7 +18,7 @@ const BlogMainPage = () => {
     }
 
     return (
-        <div id="appContainer" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
+        <div id="appContainer" style={{display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
             <BlogHeader />
 
             <div style={{maxWidth: "1200px", margin: "auto", width: "100%"}}>
@@ -26,6 +26,12 @@ const BlogMainPage = () => {
                     {/* Below is only displayed if you are on /#/blog */}
                     {isExactBlogRoute &&
                         <div>
+                            <div style={{color: "#00000099"}}>
+                                <a rel="noreferrer" href="/" id="skill_link">Home</a>
+                                &nbsp;>&nbsp;
+                                <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
+                            </div>
+
                             <h1>Colin Troisemaine's blog posts</h1>
 
                             <Row>

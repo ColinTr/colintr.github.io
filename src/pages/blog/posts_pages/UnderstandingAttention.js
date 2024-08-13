@@ -9,7 +9,16 @@ const UnderstandingAttention = () => {
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
+                    <div style={{color: "#00000099"}}>
+                        <a rel="noreferrer" href="/" id="skill_link">Home</a>
+                        &nbsp;>&nbsp;
+                        <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
+                        &nbsp;>&nbsp;
+                        <a rel="noreferrer" href="/#/blog/understanding_attention" id="skill_link">Understanding Attention</a>
+                    </div>
+
                     <h1>Understanding Attention</h1>
+
                     Work in progress...
                 </div>
             </Row>
