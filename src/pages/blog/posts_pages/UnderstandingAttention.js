@@ -1,10 +1,15 @@
 import React from "react";
+import ReactGA from "react-ga4";
 import {DiscussionEmbed} from "disqus-react";
 import {Container, Row} from "react-bootstrap";
 import ChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
 
+ReactGA.initialize("G-R8XSGWP0YR");
+
 const UnderstandingAttention = () => {
     ChangeDocumentTitle("Colin | Understanding Attention")
+    ReactGA.send({ hitType: "pageview", page: "/#/blog/understanding_attention", title: "Colin | Understanding Attention" });
+
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>

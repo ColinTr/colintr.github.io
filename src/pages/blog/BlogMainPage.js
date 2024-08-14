@@ -8,13 +8,13 @@ import ChangeDocumentTitle from "../../utils/ChangeDocumentTitle";
 import {getLatestBlogArticles} from "./getLatestBlogArticles";
 
 ReactGA.initialize("G-R8XSGWP0YR");
-ReactGA.send({ hitType: "pageview", page: "/", title: "Blog page" });
 
 const BlogMainPage = () => {
     const isExactBlogRoute = matchPath({ path: '/blog', end: true }, useLocation().pathname);
 
     if(isExactBlogRoute) {
         ChangeDocumentTitle("Colin | Blog posts")
+        ReactGA.send({ hitType: "pageview", page: "/#/blog", title: "Blog posts" });
     }
 
     return (
