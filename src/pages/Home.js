@@ -1,60 +1,32 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBrain} from "@fortawesome/free-solid-svg-icons";
 import {Col, Row} from "react-bootstrap";
 import 'font-awesome/css/font-awesome.min.css';
 import { useNav } from '../customHooks/useNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, {useState} from 'react';
-import ReactGA from "react-ga4";
-import BrainModal from './BrainModal'
+import React from 'react';
 import './Page.css';
+
 
 const Home = () => {
     const homeRef = useNav('Home');
 
-    const [isModalOpen, setIsModalOpen] = useState(false)
-    const [modelLoadPercent, setModelLoadPercent] = useState(0)
-    const openModal = () => { setIsModalOpen(true); };
-    const closeModal = () => { setIsModalOpen(false); };
-
-    async function fetch_brain_with_progress_bar() {
-        const response = await fetch('/assets/3d_brain_model.stl');
-        const contentLength = response.headers.get('content-length');
-        const total = parseInt(contentLength, 10);
-        let loaded = 0;
-
-        const res = new Response(new ReadableStream({
-            async start(controller) {
-                const reader = response.body.getReader();
-                for (;;) {
-                    const {done, value} = await reader.read();
-                    if (done) break;
-                    loaded += value.byteLength;
-                    setModelLoadPercent(Math.round(loaded/total*100))
-                    controller.enqueue(value);
-                    // await new Promise(resolve => setTimeout(resolve, 100000))
-                }
-                controller.close();
-            },
-        }));
-        await res.blob();  // Returns the blob object
-    }
-
-    function open_brain_model() {
-        ReactGA.event({category: "Brain", action: "User hit brain button"});
-        fetch_brain_with_progress_bar().then()
-        openModal()
-    }
+    // const [isModalOpen, setIsModalOpen] = useState(false)
+    // const openModal = () => { setIsModalOpen(true); };
+    // const closeModal = () => { setIsModalOpen(false); };
+    // function open_brain_model() {
+    //     ReactGA.event({category: "Brain", action: "User hit brain button"});
+    //     openModal()
+    // }
 
     return (
         <div id='homeContainer'>
+            {/*
             <div style={{padding:0}}>
                 <BrainModal
                     isModalOpen={isModalOpen}
-                    modelLoadPercent={modelLoadPercent}
                     onClose={closeModal}
                 />
             </div>
+            */}
             <section ref={homeRef}>
                 <Row>
                     <Col className="col-lg-4 col-12">
@@ -111,14 +83,16 @@ const Home = () => {
                                         </a>
                                     </Col>
                                 </Row>
-                                <Row>
-                                    <div className="d-flex justify-content-center">
-                                        <button className="btn btn-outline-primary my-1 p-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}} title="3D brain model"
-                                                onClick={() => open_brain_model()}>
-                                            <FontAwesomeIcon icon={faBrain} size="4x" style={{color: '#33b38d', 'width': '30px', 'height': '30px'}} className="py-0"/>
-                                        </button>
-                                    </div>
-                                </Row>
+                                {/*
+                                    <Row>
+                                        <div className="d-flex justify-content-center">
+                                            <button className="btn btn-outline-primary my-1 p-1 btn-sm js-cite-modal" style={{display:"flex", alignItems:"center"}} title="3D brain model"
+                                                    onClick={() => open_brain_model()}>
+                                                <FontAwesomeIcon icon={faBrain} size="4x" style={{color: '#33b38d', 'width': '30px', 'height': '30px'}} className="py-0"/>
+                                            </button>
+                                        </div>
+                                    </Row>
+                                */}
                             </Col>
                         </Row>
                     </Col>

@@ -22,7 +22,7 @@ const UnderstandingTransformers = () => {
                         <a rel="noreferrer" href="/#/blog/understanding_transformers" id="skill_link">Understanding Transformers</a>
                     </div>
 
-                    <h1>Understanding Transformers</h1>
+                    <h1 className="py-3">Understanding Transformers</h1>
 
                     Work in progress...
                 </div>

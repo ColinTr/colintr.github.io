@@ -22,7 +22,7 @@ const UnderstandingAttention = () => {
                         <a rel="noreferrer" href="/#/blog/understanding_attention" id="skill_link">Understanding Attention</a>
                     </div>
 
-                    <h1>Understanding Attention</h1>
+                    <h1 className="py-3">Understanding Attention</h1>
 
                     Work in progress...
                 </div>
