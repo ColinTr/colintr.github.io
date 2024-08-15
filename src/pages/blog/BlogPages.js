@@ -12,7 +12,7 @@ const blogPages = [
         description:
             "In this page, you will find a detailed step-by-step guide to transform the images taken during your MRI into a high-fidelity 3D model of your brain. " +
             "We will also cover the steps required to retrieve each hemisphere and the subcortical regions, making your model truly .",
-        date: "15 Aug 2023 18:00:00 GMT"
+        date: "15 Aug 2024 18:00:00 GMT"
     },
     {
         blogPageAddress: "understanding_attention",

@@ -104,7 +104,7 @@ const PrintYourBrain = () => {
                                         </ul>
                                     </li>
                                     <li><b><a rel="noreferrer" target="_blank" href="https://www.meshlab.net/#download">MeshLab</a></b> will help you clean the rough output of FreeSurfer and split the hemispheres and subcortical regions into individual files.</li>
-                                    <li><b><a rel="noreferrer" target="_blank" href="https://meshmixer.com/download.html">Meshmixer</a></b> is a seemingly simple, but actually very complete tool intended for easy 3D sculpting and creation. We will use for the finishing touches and to optimize the model's size.</li>
+                                    <li><b><a rel="noreferrer" target="_blank" href="https://meshmixer.com/download.html">Meshmixer</a></b> is a seemingly simple, but actually very complete tool intended for easy 3D sculpting and creation. We'll use it for the finishing touches and to optimize the model's size.</li>
                                 </ul>
 
                             <div style={{color: 'red'}}>Below is still a work in progress...</div>
