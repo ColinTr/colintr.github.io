@@ -42,7 +42,7 @@ export function getLatestBlogArticles(max_elements) {
                     {index < sliced_array.length - 1 ? <center><hr style={{width: '90%'}}/></center> : <div/>}
                 </div>
             } else {
-                return <div/>
+                return <div key={item["title"]}/>
             }
         }
     )
