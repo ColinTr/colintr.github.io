@@ -1,14 +1,17 @@
 import React from "react";
 import ReactGA from "react-ga4";
 import {DiscussionEmbed} from "disqus-react";
-import {Container, Row} from "react-bootstrap";
-import ChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
+import {Col, Container, Row} from "react-bootstrap";
+import useChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
 
 ReactGA.initialize("G-R8XSGWP0YR");
 
 const UnderstandingAttention = () => {
-    ChangeDocumentTitle("Colin | Understanding Attention")
-    ReactGA.send({ hitType: "pageview", page: "/#/blog/understanding_attention", title: "Colin | Understanding Attention" });
+    useChangeDocumentTitle("Colin | Understanding Attention");
+    ReactGA.send({ hitType: "pageview", page: "/#/blog/understanding_transformers", title: "Colin | Understanding Attention" });
+
+    // Scroll to the top of the component when it is rendered
+    window.scrollTo(0, 0)
 
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
@@ -22,7 +25,14 @@ const UnderstandingAttention = () => {
                         <a rel="noreferrer" href="/#/blog/understanding_attention" id="skill_link">Understanding Attention</a>
                     </div>
 
-                    <h1 className="py-3">Understanding Attention</h1>
+                    <Row className="py-3">
+                        <Col className="col-auto" style={{ flexGrow: 1 }}>
+                            <h1>Understanding Attention</h1>
+                        </Col>
+                        <Col className="d-flex align-items-center col-auto">
+                            <p id="education_p_2" className="my-1">Written in August 2024</p>
+                        </Col>
+                    </Row>
 
                     Work in progress...
                 </div>

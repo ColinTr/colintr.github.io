@@ -4,13 +4,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBrain, faDownload} from "@fortawesome/free-solid-svg-icons";
 import { DiscussionEmbed } from 'disqus-react';
 import {Col, Container, Row} from "react-bootstrap";
-import ChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
+import useChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
 import BrainModal from "../../BrainModal";
 
 ReactGA.initialize("G-R8XSGWP0YR");
 
 const PrintYourBrain = () => {
-    ChangeDocumentTitle("Colin | 3D print your brain")
+    useChangeDocumentTitle("Colin | 3D print your brain");
     ReactGA.send({ hitType: "pageview", page: "/#/blog/3d_print_your_brain", title: "Colin | 3D print your brain" });
 
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -20,6 +20,9 @@ const PrintYourBrain = () => {
         ReactGA.event({category: "Brain", action: "User hit brain button"});
         openModal()
     }
+
+    // Scroll to the top of the component when it is rendered
+    window.scrollTo(0, 0)
 
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify"}}>
@@ -39,7 +42,14 @@ const PrintYourBrain = () => {
                         <a rel="noreferrer" href="/#/blog/3d_print_your_brain" id="skill_link">3D print your brain</a>
                     </div>
 
-                    <h1 className="py-3">3D print your brain</h1>
+                    <Row className="py-3">
+                        <Col className="col-auto" style={{ flexGrow: 1 }}>
+                            <h1>3D print your brain</h1>
+                        </Col>
+                        <Col className="d-flex align-items-center col-auto">
+                            <p id="education_p_2" className="my-1">Written in August 2024</p>
+                        </Col>
+                    </Row>
 
                     <Row className="justify-content-center">
                         <Col className="col-4 p-0" style={{maxWidth: "250px"}}>

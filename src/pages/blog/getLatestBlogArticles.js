@@ -14,6 +14,7 @@ export function getLatestBlogArticles(max_elements) {
     return sliced_array.map(function(item, index) {
             if (item["hidden"] === false) {
                 return <div key={item["title"]}>
+                    <center><hr style={{width: '90%'}}/></center>
                     <Row className="my-3">
                         <Col xs={12} sm={9}>
                             <h3>
@@ -39,7 +40,7 @@ export function getLatestBlogArticles(max_elements) {
                             </a>
                         </Col>
                     </Row>
-                    {index < sliced_array.length - 1 ? <center><hr style={{width: '90%'}}/></center> : <div/>}
+                    {/** {index < sliced_array.length - 1 ? <center><hr style={{width: '90%'}}/></center> : <div/>} **/}
                 </div>
             } else {
                 return <div key={item["title"]}/>

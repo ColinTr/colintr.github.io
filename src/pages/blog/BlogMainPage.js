@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 import Footer from "../Footer";
 import { Outlet, useLocation, matchPath } from 'react-router-dom';
 import BlogHeader from "./BlogHeader";
 import {Col, Row} from "react-bootstrap";
-import ChangeDocumentTitle from "../../utils/ChangeDocumentTitle";
+import useChangeDocumentTitle from "../../utils/ChangeDocumentTitle";
 import {getLatestBlogArticles} from "./getLatestBlogArticles";
 
 ReactGA.initialize("G-R8XSGWP0YR");
 
 const BlogMainPage = () => {
-    const isExactBlogRoute = matchPath({ path: '/blog', end: true }, useLocation().pathname);
+    const location = useLocation();
+    const isExactBlogRoute = matchPath({ path: '/blog', end: true }, location.pathname);
 
-    if(isExactBlogRoute) {
-        ChangeDocumentTitle("Colin | Blog posts")
-        ReactGA.send({ hitType: "pageview", page: "/#/blog", title: "Blog posts" });
-    }
+
+    useChangeDocumentTitle(isExactBlogRoute ? "Colin | Blog posts" : "Colin");
+
+    useEffect(() => {
+        if (isExactBlogRoute) {
+            ReactGA.send({ hitType: "pageview", page: "/#/blog", title: "Blog posts" });
+        }
+    }, [isExactBlogRoute]);
 
     return (
         <div id="appContainer" style={{display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
             <BlogHeader />
 
-            <div style={{maxWidth: "1200px", margin: "auto", width: "100%"}}>
+            <div style={{maxWidth: "1050px", margin: "auto", width: "100%"}}>
                 <section>
                     {/* Below is only displayed if you are on /#/blog */}
                     {isExactBlogRoute &&
@@ -40,13 +45,13 @@ const BlogMainPage = () => {
                                 </Col>
                             </Row>
 
-                            <center><hr style={{width: '90%'}}/></center>
+                            {/** <center><hr style={{width: '90%'}}/></center> **/}
 
                             {getLatestBlogArticles()}
                         </div>
                     }
                     {/* And this is the nested routes /#/blog/... */}
-                    <Outlet />
+                    {!isExactBlogRoute && <Outlet />}
                 </section>
             </div>
 
