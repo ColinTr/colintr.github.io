@@ -4,15 +4,11 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBrain, faDownload} from "@fortawesome/free-solid-svg-icons";
 import { DiscussionEmbed } from 'disqus-react';
 import {Col, Container, Row} from "react-bootstrap";
-import useChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
 import BrainModal from "../../BrainModal";
-
-ReactGA.initialize("G-R8XSGWP0YR");
+import BlogLinkElement from "../BlogLinkElement";
+import {useLocation} from "react-router-dom";
 
 const PrintYourBrain = () => {
-    useChangeDocumentTitle("Colin | 3D print your brain");
-    ReactGA.send({ hitType: "pageview", page: "/#/blog/3d_print_your_brain", title: "Colin | 3D print your brain" });
-
     const [isModalOpen, setIsModalOpen] = useState(false)
     const openModal = () => { setIsModalOpen(true); };
     const closeModal = () => { setIsModalOpen(false); };
@@ -21,8 +17,8 @@ const PrintYourBrain = () => {
         openModal()
     }
 
-    // Scroll to the top of the component when it is rendered
-    window.scrollTo(0, 0)
+    const page_title = "3D print your brain"
+    const path = useLocation().pathname
 
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify"}}>
@@ -34,17 +30,11 @@ const PrintYourBrain = () => {
             </div>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
-                    <div style={{color: "#00000099"}}>
-                        <a rel="noreferrer" href="/" id="skill_link">Home</a>
-                        &nbsp;>&nbsp;
-                        <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
-                        &nbsp;>&nbsp;
-                        <a rel="noreferrer" href="/#/blog/3d_print_your_brain" id="skill_link">3D print your brain</a>
-                    </div>
+                    <BlogLinkElement path={path} page_title={page_title}/>
 
                     <Row className="py-3">
                         <Col className="col-auto" style={{ flexGrow: 1 }}>
-                            <h1>3D print your brain</h1>
+                            <h1 id="page_title">{page_title}</h1>
                         </Col>
                         <Col className="d-flex align-items-center col-auto">
                             <p id="education_p_2" className="my-1">Written in August 2024</p>
@@ -169,8 +159,8 @@ const PrintYourBrain = () => {
                     config={
                         {
                             url: window.location.href,
-                            identifier: "3d_print_your_brain",
-                            title: "3D print your brain",
+                            identifier: path,
+                            title: page_title,
                             language: 'en'
                         }
                     }

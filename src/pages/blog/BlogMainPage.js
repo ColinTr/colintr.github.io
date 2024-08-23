@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactGA from "react-ga4";
 import Footer from "../Footer";
 import { Outlet, useLocation, matchPath } from 'react-router-dom';
 import BlogHeader from "./BlogHeader";
 import {Col, Row} from "react-bootstrap";
-import useChangeDocumentTitle from "../../utils/ChangeDocumentTitle";
 import {getLatestBlogArticles} from "./getLatestBlogArticles";
+import useChangePageTitle from "../../utils/useChangePageTitle";
 
 ReactGA.initialize("G-R8XSGWP0YR");
 
@@ -13,14 +13,8 @@ const BlogMainPage = () => {
     const location = useLocation();
     const isExactBlogRoute = matchPath({ path: '/blog', end: true }, location.pathname);
 
-
-    useChangeDocumentTitle(isExactBlogRoute ? "Colin | Blog posts" : "Colin");
-
-    useEffect(() => {
-        if (isExactBlogRoute) {
-            ReactGA.send({ hitType: "pageview", page: "/#/blog", title: "Blog posts" });
-        }
-    }, [isExactBlogRoute]);
+    ReactGA.send({ hitType: "pageview", page: "/#" + location.pathname});
+    useChangePageTitle();
 
     return (
         <div id="appContainer" style={{display: 'flex', flexDirection: 'column', minHeight: '100vh', width: "100%", margin: 0, padding: 0}}>
@@ -37,15 +31,13 @@ const BlogMainPage = () => {
                                 <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
                             </div>
 
-                            <h1>Colin Troisemaine's blog posts</h1>
+                            <h1 id="page_title">Colin Troisemaine's blog posts</h1>
 
                             <Row>
                                 <Col style={{backgroundColor: "#e9eaed", borderRadius: "8px", margin: "0 12px 0 12px", padding: "12px"}}>
                                     <u>Note:</u> I write these blog posts mainly to deepen my own understanding of these concepts, but I hope they can help others exploring similar topics!
                                 </Col>
                             </Row>
-
-                            {/** <center><hr style={{width: '90%'}}/></center> **/}
 
                             {getLatestBlogArticles()}
                         </div>

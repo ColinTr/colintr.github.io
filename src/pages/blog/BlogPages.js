@@ -7,7 +7,7 @@ const blogPages = [
         blogPageAddress: "understanding_transformers",
         hidden: false,
         blogPageComponent: <UnderstandingTransformers />,
-        title: "Understanding transformers",
+        title: "Understanding transformers and attention",
         illustration: "/assets/blog/understanding_transformers/attention_architecture_cropped.png",
         description:
             "Work in progress...",

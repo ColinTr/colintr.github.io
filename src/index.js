@@ -7,12 +7,14 @@ import BlogMainPage from "./pages/blog/BlogMainPage";
 import blogPages from "./pages/blog/BlogPages";
 import NotFound from "./pages/NotFound";
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./utils/ScrollToTop";
 
 const root = createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
         <HashRouter >
+            <ScrollToTop />
             <Routes>
                 <Route exact path="/" element={<App />} />
                 <Route exact path="/blog" element={<BlogMainPage />}>

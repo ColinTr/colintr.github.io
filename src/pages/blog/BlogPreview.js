@@ -23,8 +23,6 @@ const BlogPreview = () => {
                         </Col>
                     </Row>
 
-                    {/** <center><hr style={{width: '90%'}}/></center> **/}
-
                     {getLatestBlogArticles(5)}
 
                     <center><hr style={{width: '90%'}}/></center>

@@ -1,33 +1,22 @@
 import React from "react";
-import ReactGA from "react-ga4";
 import {DiscussionEmbed} from "disqus-react";
 import {Col, Container, Row} from "react-bootstrap";
-import useChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
-
-ReactGA.initialize("G-R8XSGWP0YR");
+import {useLocation} from "react-router-dom";
+import BlogLinkElement from "../BlogLinkElement";
 
 const UnderstandingAttention = () => {
-    useChangeDocumentTitle("Colin | Understanding Attention");
-    ReactGA.send({ hitType: "pageview", page: "/#/blog/understanding_transformers", title: "Colin | Understanding Attention" });
-
-    // Scroll to the top of the component when it is rendered
-    window.scrollTo(0, 0)
+    const page_title = "Understanding attention"
+    const path = useLocation().pathname
 
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
-                    <div style={{color: "#00000099"}}>
-                        <a rel="noreferrer" href="/" id="skill_link">Home</a>
-                        &nbsp;>&nbsp;
-                        <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
-                        &nbsp;>&nbsp;
-                        <a rel="noreferrer" href="/#/blog/understanding_attention" id="skill_link">Understanding Attention</a>
-                    </div>
+                    <BlogLinkElement path={path} page_title={page_title}/>
 
                     <Row className="py-3">
                         <Col className="col-auto" style={{ flexGrow: 1 }}>
-                            <h1>Understanding Attention</h1>
+                            <h1 id="page_title">{page_title}</h1>
                         </Col>
                         <Col className="d-flex align-items-center col-auto">
                             <p id="education_p_2" className="my-1">Written in August 2024</p>
@@ -44,8 +33,8 @@ const UnderstandingAttention = () => {
                     config={
                         {
                             url: window.location.href,
-                            identifier: "understanding_attention",
-                            title: "Understanding Attention",
+                            identifier: path,
+                            title: page_title,
                             language: 'en'
                         }
                     }

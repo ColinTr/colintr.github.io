@@ -1,33 +1,22 @@
 import React from "react";
-import ReactGA from "react-ga4";
 import {DiscussionEmbed} from "disqus-react";
 import {Col, Container, Row} from "react-bootstrap";
-import useChangeDocumentTitle from "../../../utils/ChangeDocumentTitle";
-
-ReactGA.initialize("G-R8XSGWP0YR");
+import {useLocation} from "react-router-dom";
+import BlogLinkElement from "../BlogLinkElement";
 
 const UnderstandingTransformers = () => {
-    useChangeDocumentTitle("Colin | Understanding Transformers");
-    ReactGA.send({ hitType: "pageview", page: "/#/blog/understanding_transformers", title: "Colin | Understanding Transformers" });
-
-    // Scroll to the top of the component when it is rendered
-    window.scrollTo(0, 0)
+    const page_title = "Understanding transformers and attention"
+    const path = useLocation().pathname
 
     return (
         <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
-                    <div style={{color: "#00000099"}}>
-                        <a rel="noreferrer" href="/" id="skill_link">Home</a>
-                        &nbsp;>&nbsp;
-                        <a rel="noreferrer" href="/#/blog" id="skill_link">Blog posts</a>
-                        &nbsp;>&nbsp;
-                        <a rel="noreferrer" href="/#/blog/understanding_transformers" id="skill_link">Understanding Transformers</a>
-                    </div>
+                    <BlogLinkElement path={path} page_title={page_title}/>
 
                     <Row className="py-3">
                         <Col className="col-auto" style={{ flexGrow: 1 }}>
-                            <h1>Understanding Transformers</h1>
+                            <h1 id="page_title">{page_title}</h1>
                         </Col>
                         <Col className="d-flex align-items-center col-auto">
                             <p id="education_p_2" className="my-1">Written in August 2024</p>
@@ -62,7 +51,14 @@ const UnderstandingTransformers = () => {
                     </ul>
                     More generally, the transformer architecture is a powerful building block that can be used to process <u>any sequential data with long-range dependencies</u>, such as text, time series or protein structure.
                     Because they are so ubiquitous, it is important as a data scientist to understand the principles behind transformers.
-
+                    <br/>
+                    <br/>
+                    But before starting, let's define some important vocabulary:
+                    <br/>
+                    - The <u>attention mechanism</u> is a building block of the transformer architecture.
+                    <br/>
+                    - The <u>transformer architecture</u>, introduced in the 2017 paper "<a rel="noreferrer" target="_blank" href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>", is built entirely around the attention mechanism.
+                    It consists of an encoder and a decoder, both of which use self-attention and multi-head attention mechanisms to process input and output sequences.
                     <br/>
                     <br/>
                     <div style={{color: 'red'}}>Below is still a work in progress...</div>
@@ -101,7 +97,7 @@ const UnderstandingTransformers = () => {
                             Jay Alammar's blog post <a rel="noreferrer" target="_blank" href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a>
                         </li>
                         <li>
-                            3Blue1Brown's video <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=wjZofJX0v4M">But what is a GPT?</a>
+                            3Blue1Brown's <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=wjZofJX0v4M">But what is a GPT?</a> and <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=eMlx5fFNoYc">Attention in transformers</a> videos
                         </li>
                     </ul>
                 </div>
@@ -113,8 +109,8 @@ const UnderstandingTransformers = () => {
                     config={
                         {
                             url: window.location.href,
-                            identifier: "understanding_transformers",
-                            title: "Understanding Transformers",
+                            identifier: path,
+                            title: page_title,
                             language: 'en'
                         }
                     }
