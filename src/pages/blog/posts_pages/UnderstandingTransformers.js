@@ -4,6 +4,9 @@ import {Col, Container, Row} from "react-bootstrap";
 import {useLocation} from "react-router-dom";
 import BlogLinkElement from "../BlogLinkElement";
 
+import 'katex/dist/katex.min.css';
+import Latex from 'react-latex-next';
+
 const UnderstandingTransformers = () => {
     const page_title = "Understanding transformers and attention"
     const path = useLocation().pathname
@@ -55,23 +58,98 @@ const UnderstandingTransformers = () => {
                     <br/>
                     But before starting, let's define some important vocabulary:
                     <br/>
-                    - The <u>attention mechanism</u> is a building block of the transformer architecture.
+                    - The <u>attention function</u> is the core building block of the transformer architecture.
                     <br/>
                     - The <u>transformer architecture</u>, introduced in the 2017 paper "<a rel="noreferrer" target="_blank" href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>", is built entirely around the attention mechanism.
                     It consists of an encoder and a decoder, both of which use self-attention and multi-head attention mechanisms to process input and output sequences.
+
+                    <h3 className="pt-4">2. The attention function</h3>
+
+                    Knowing the inner workings of the attention function is not required to understand the transformer architecture, but it will certainly make the process easier.
+                    Now, let us break down the details of how it works.
+                    <br/>
+                    <br/>
+                    We will illustrate with the sentence "<i>Attention is crucial, it must be understood.</i>"
+                    <br/>
+                    Putting its words trough a <a rel="noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Word_embedding">word embedding</a> function transforms them into numerical vectors that we can process.
+
+                    <center className="py-2">
+                        <img
+                            style={{width: "100%", height: "auto", maxWidth: "570px"}}
+                            alt="Attention architecture"
+                            title="Attention architecture"
+                            src="/assets/blog/understanding_transformers/attention1.png"
+                        />
+                        <br/>
+                        <i>Each word is now a vector, which we represent with these simple boxes.</i>
+                    </center>
+
+                    We will see later that the transformer architecture uses multiple attention <i>heads</i>.
+                    For the time being, let's focus on a single head.
+                    In the "Attention is all you need" paper, the Scaled Dot-Product Attention is represented by this figure:
+
+                    <center className="py-2">
+                        <img
+                            style={{width: "100%", height: "auto", maxWidth: "140px"}}
+                            alt="Attention architecture"
+                            title="Attention architecture"
+                            src="/assets/blog/understanding_transformers/scaled_dot-product_attention.png"
+                        />
+                    </center>
+
+                    The input consists of <Latex>$Q$, $K$ and $V$</Latex>, the query, key and value matrices.
+                    They are the result of the product between the input vectors <Latex>{'$\\vec{e_1}, \\vec{e_2}, \\dots \\vec{e_7}$'}</Latex> and the query, key and value <b>weight matrices</b> <Latex>$W_Q$, $W_K$ and $W_V$</Latex>:
+
+                    <center>
+                        <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                            <img
+                                style={{width: "100%", height: "auto", maxWidth: "400px"}}
+                                className="py-2"
+                                alt="Attention architecture"
+                                title="Attention architecture"
+                                src="/assets/blog/understanding_transformers/attention2.png"
+                            />
+                            <img
+                                style={{width: "100%", height: "auto", maxWidth: "400px"}}
+                                className="py-2"
+                                alt="Attention architecture"
+                                title="Attention architecture"
+                                src="/assets/blog/understanding_transformers/attention3.png"
+                            />
+                        </div>
+                        <i>Computing the first query and key vectors</i>
+                    </center>
+
+                    This process is repeated for each word in the sentence, forming the query <b>vectors</b> <Latex>{'$\\vec{q_1}, \\vec{q_2}, \\dots \\vec{q_7}$'}</Latex> and  the key <b>vectors</b> <Latex>{'$\\vec{k_1}, \\vec{k_2}, \\dots \\vec{k_7}$'}</Latex>.
+                    <br/>
+                    They can then be concatenated to form the query <b>matrix</b> and the key <b>matrix</b>:
+                    <center className="py-2">
+                        <Latex>{'$Q = \\begin{bmatrix} \\vert & & \\vert \\\\ q_1 & \\dots & q_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex> and <Latex>{'$K = \\begin{bmatrix} \\vert & & \\vert \\\\ k_1 & \\dots & k_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
+                    </center>
+
+
+
+
+
+
+
+
+
+
+
+
                     <br/>
                     <br/>
                     <div style={{color: 'red'}}>Below is still a work in progress...</div>
 
-
-                    <h3 className="py-4">2. Input</h3>
+                    <h3 className="pt-4">?. Input</h3>
 
                     Embeddings, Word2Vec for text, DINO for images, ...
                     <br/>
                     <br/>
                     Before diving into the actual mechanisms of transformers, it is important to understand how the data
 
-                    <h3 className="py-4">3. Transformer Architecture</h3>
+                    <h3 className="pt-4">?. Transformer Architecture</h3>
 
                     ToDo
 
@@ -84,14 +162,14 @@ const UnderstandingTransformers = () => {
                         />
                     </center>
 
-                    <h3 className="py-4">?. Prompts and LLMs</h3>
+                    <h3 className="pt-4">?. Prompts and LLMs</h3>
 
                     How to build chat bots? i.e. the model is trained by feeding it questions and answers: "Q: blabla. A: blabla". During inference, it takes the question as an input and tries to complete the rest: "Q: blabla. A: ...".
                     <br/>
                     <br/>
                     Inference parameters: Temperature, top-k top-p, ...
 
-                    <h3 className="py-4">Resources</h3>
+                    <h3 className="pt-4">Resources</h3>
                     <ul>
                         <li>
                             Jay Alammar's blog post <a rel="noreferrer" target="_blank" href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a>
