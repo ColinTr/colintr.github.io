@@ -86,7 +86,7 @@ const UnderstandingTransformers = () => {
 
                     We will see later that the transformer architecture uses multiple attention <i>heads</i>.
                     For the time being, let's focus on a single head.
-                    In the "Attention is all you need" paper, the Scaled Dot-Product Attention is represented by this figure:
+                    In the "Attention is all you need" paper, the "scaled dot-product attention" is represented by this figure:
 
                     <center className="py-2">
                         <img
@@ -95,52 +95,63 @@ const UnderstandingTransformers = () => {
                             title="Attention architecture"
                             src="/assets/blog/understanding_transformers/scaled_dot-product_attention.png"
                         />
+                        <br/>
+                        <i>The scaled dot-product attention function</i>
                     </center>
 
-                    The input consists of <Latex>$Q$, $K$ and $V$</Latex>, the query, key and value matrices.
-                    They are the result of the product between the input vectors <Latex>{'$\\vec{e_1}, \\vec{e_2}, \\dots \\vec{e_7}$'}</Latex> and the query, key and value <b>weight matrices</b> <Latex>$W_Q$, $W_K$ and $W_V$</Latex>:
+                    The input consists of <Latex>$Q$, $K$ and $V$</Latex>, the query, key and value <b>matrices</b>.
+                    They are the result of the product between the input vectors <Latex>{'$\\vec{e_1}, \\vec{e_2}, \\dots, \\vec{e_7}$'}</Latex> and the query, key and value <b>weight matrices</b> <Latex>$W_Q$, $W_K$ and $W_V$</Latex>, the tunable parameters of the model.
 
                     <center>
-                        <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
-                            <img
-                                style={{width: "100%", height: "auto", maxWidth: "400px"}}
-                                className="py-2"
-                                alt="Attention architecture"
-                                title="Attention architecture"
-                                src="/assets/blog/understanding_transformers/attention2.png"
-                            />
-                            <img
-                                style={{width: "100%", height: "auto", maxWidth: "400px"}}
-                                className="py-2"
-                                alt="Attention architecture"
-                                title="Attention architecture"
-                                src="/assets/blog/understanding_transformers/attention3.png"
-                            />
-                        </div>
-                        <i>Computing the first query and key vectors</i>
+                        {/** <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}> </div> **/}
+                        <img
+                            style={{width: "100%", height: "auto", maxWidth: "400px"}}
+                            className="py-2"
+                            alt="Attention architecture"
+                            title="Attention architecture"
+                            src="/assets/blog/understanding_transformers/attention2.png"
+                        />
+                        <br/>
+                        <i>Computing the first query vector</i>
                     </center>
 
-                    This process is repeated for each word in the sentence, forming the query <b>vectors</b> <Latex>{'$\\vec{q_1}, \\vec{q_2}, \\dots \\vec{q_7}$'}</Latex> and  the key <b>vectors</b> <Latex>{'$\\vec{k_1}, \\vec{k_2}, \\dots \\vec{k_7}$'}</Latex>.
+                    The query <b>weight matrix</b> <Latex>$W_Q$</Latex> is multiplied with each word in the sentence, forming the query <b>vectors</b> <Latex>{'$\\vec{q_1}, \\vec{q_2}, \\dots, \\vec{q_7}$'}</Latex>
                     <br/>
-                    They can then be concatenated to form the query <b>matrix</b> and the key <b>matrix</b>:
+                    They can then be concatenated to form the query <b>matrix</b>:
                     <center className="py-2">
-                        <Latex>{'$Q = \\begin{bmatrix} \\vert & & \\vert \\\\ q_1 & \\dots & q_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex> and <Latex>{'$K = \\begin{bmatrix} \\vert & & \\vert \\\\ k_1 & \\dots & k_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
+                        <Latex>{'$Q = \\begin{bmatrix} \\vert & & \\vert \\\\ q_1 & \\dots & q_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
                     </center>
-
-
-
-
-
-
-
-
-
-
-
 
                     <br/>
                     <br/>
                     <div style={{color: 'red'}}>Below is still a work in progress...</div>
+
+                    ToDo explain the intuition of what the query vectors represent...
+
+                    <center>
+                        <img
+                            style={{width: "100%", height: "auto", maxWidth: "400px"}}
+                            className="py-2"
+                            alt="Attention architecture"
+                            title="Attention architecture"
+                            src="/assets/blog/understanding_transformers/attention3.png"
+                        />
+                        <br/>
+                        <i>Computing the first key vector</i>
+                    </center>
+                    ...the key <b>vectors</b> <Latex>{'$\\vec{k_1}, \\vec{k_2}, \\dots, \\vec{k_7}$'}</Latex>...
+                    <br/>
+                    ...the key <b>matrix</b>
+                    <center className="py-2">
+                        <Latex>{'$K = \\begin{bmatrix} \\vert & & \\vert \\\\ k_1 & \\dots & k_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
+                    </center>
+
+
+
+
+
+
+
 
                     <h3 className="pt-4">?. Input</h3>
 
