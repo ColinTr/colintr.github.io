@@ -12,7 +12,7 @@ const UnderstandingTransformers = () => {
     const path = useLocation().pathname
 
     return (
-        <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify"}}>
+        <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify", fontFamily: "Arial"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
                     <BlogLinkElement path={path} page_title={page_title}/>
@@ -81,12 +81,12 @@ const UnderstandingTransformers = () => {
                             src="/assets/blog/understanding_transformers/attention1.png"
                         />
                         <br/>
-                        <i>Each word is now a vector, which we represent with these simple boxes.</i>
+                        <i>Each word is now a vector, which we represent with these simple boxes</i>
                     </center>
 
                     We will see later that the transformer architecture uses multiple attention <i>heads</i>.
                     For the time being, let's focus on a single head.
-                    In the "Attention is all you need" paper, the "scaled dot-product attention" is represented by this figure:
+                    The "Attention is all you need" paper defines the "scaled dot-product attention", represented by this figure:
 
                     <center className="py-2">
                         <img
@@ -99,49 +99,92 @@ const UnderstandingTransformers = () => {
                         <i>The scaled dot-product attention function</i>
                     </center>
 
+                    And it is defined by this equation, which we are going to break down in this section:
+                    <br/>
+                    <center>
+                        <Latex>{'$\\text{Attention(}Q, K, V \\text{) = softmax(}\\frac{QK^T}{\\sqrt{d_k}})V$'}</Latex>
+                    </center>
+                    <br/>
                     The input consists of <Latex>$Q$, $K$ and $V$</Latex>, the query, key and value <b>matrices</b>.
                     They are the result of the product between the input vectors <Latex>{'$\\vec{e_1}, \\vec{e_2}, \\dots, \\vec{e_7}$'}</Latex> and the query, key and value <b>weight matrices</b> <Latex>$W_Q$, $W_K$ and $W_V$</Latex>, the tunable parameters of the model.
+                    For instance, the query vector for the embedding of the first word is computed this way:
 
-                    <center>
+                    <center className="py-2">
                         {/** <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}> </div> **/}
                         <img
-                            style={{width: "100%", height: "auto", maxWidth: "400px"}}
-                            className="py-2"
-                            alt="Attention architecture"
-                            title="Attention architecture"
+                            style={{width: "100%", height: "auto", maxWidth: "350px"}}
+
+                            alt="Computing the first query vector"
+                            title="Computing the first query vector"
                             src="/assets/blog/understanding_transformers/attention2.png"
                         />
                         <br/>
                         <i>Computing the first query vector</i>
                     </center>
 
-                    The query <b>weight matrix</b> <Latex>$W_Q$</Latex> is multiplied with each word in the sentence, forming the query <b>vectors</b> <Latex>{'$\\vec{q_1}, \\vec{q_2}, \\dots, \\vec{q_7}$'}</Latex>
+                    The <b>query weight matrix</b> <Latex>$W_Q$</Latex> is multiplied with each word embeddings in the sentence, forming the <b>query vectors</b> <Latex>{'$\\vec{q_1}, \\vec{q_2}, \\dots, \\vec{q_7}$'}</Latex>.
                     <br/>
-                    They can then be concatenated to form the query <b>matrix</b>:
+                    Intuitively, creating a query vector for a single word is like formulating a question that will later be asked to the other words in the sentence.
+                    While this view is rather simplistic, we can consider that each attention head focuses on a different aspect of language.
+                    So, for example, if our attention head here focuses on mapping pronouns to the nouns they refer to, the query vector <Latex>{'$\\vec{q_4}$'}</Latex> is asking: <i>Which noun is the word <u>it</u> referring to in this sentence?</i>
+                    <br/>
+                    <br/>
+                    To get an answer to this question, we first need to compute the <b>key vectors</b> <Latex>{'$\\vec{k_1}, \\vec{k_2}, \\dots, \\vec{k_7}$'}</Latex>.
+                    Similarly to the query vectors, they are obtained by multiplying the <b>key weight matrix</b> <Latex>$W_K$</Latex> with each word embeddings of the sentence:
+
                     <center className="py-2">
-                        <Latex>{'$Q = \\begin{bmatrix} \\vert & & \\vert \\\\ q_1 & \\dots & q_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
-                    </center>
-
-                    <br/>
-                    <br/>
-                    <div style={{color: 'red'}}>Below is still a work in progress...</div>
-
-                    ToDo explain the intuition of what the query vectors represent...
-
-                    <center>
                         <img
-                            style={{width: "100%", height: "auto", maxWidth: "400px"}}
-                            className="py-2"
-                            alt="Attention architecture"
-                            title="Attention architecture"
+                            style={{width: "100%", height: "auto", maxWidth: "350px"}}
+                            alt="Computing the first key vector"
+                            title="Computing the first key vector"
                             src="/assets/blog/understanding_transformers/attention3.png"
                         />
                         <br/>
                         <i>Computing the first key vector</i>
                     </center>
-                    ...the key <b>vectors</b> <Latex>{'$\\vec{k_1}, \\vec{k_2}, \\dots, \\vec{k_7}$'}</Latex>...
+
+                    We can see the keys as potentially answering the question of the attention head.
+                    So in our example, the first key vector <Latex>{'$\\vec{q_1}$'}</Latex> (referring to the noun <i>Attention</i>) should only align with the fourth query vector <Latex>{'$\\vec{q_4}$'}</Latex>.
                     <br/>
-                    ...the key <b>matrix</b>
+                    <br/>
+                    The next step is to multiply each query vector with each key vector at once.
+                    The result is a square matrix of size <Latex>$d_k$</Latex> (the number of words in the input sentence) where higher values indicate logical pairs with regard to the focus of the attention head.
+
+                    {/*<div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}} className="py-2"> </div>*/}
+                    <center className="py-2">
+                        <img
+                            style={{width: "100%", height: "auto", maxWidth: ""}}
+                            alt="Computing the key value matrix"
+                            title="Computing the key value matrix"
+                            src="/assets/blog/understanding_transformers/key_value_matrix.png"
+                        />
+                        <br/>
+                        <i>Visualizing the computation of the <Latex>{'$Q \\cdot K^T$'}</Latex> matrix</i>
+                    </center>
+
+                    In the example above, the
+
+                    to prevent leftward information flow in the decoder to preserve the auto-regressive property.
+                    We implement this inside of scaled dot-product attention by masking out (setting to <Latex>{'$-\\infty$'}</Latex>) all values in the input of the softmax which correspond to illegal connections.
+
+                    <br/>
+                    <br/>
+
+                    The authors justify this idea by writing: <i>"We suspect that for large values of <Latex>{'$d_k$'}</Latex>, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients.
+                    To counteract this effect, we scale the dot products by <Latex>{'$\\frac{1}{\\sqrt{d_k}}$'}</Latex>."</i>
+
+                    <br/>
+                    <br/>
+                    <div style={{color: 'red'}}>Below is still a work in progress...</div>
+                    <br/>
+                    <br/>
+
+                    In practice, they are concatenated to form the query <b>matrix</b> <Latex>$Q$</Latex>:
+                    <center className="py-2">
+                        <Latex>{'$Q = \\begin{bmatrix} \\vert & & \\vert \\\\ q_1 & \\dots & q_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
+                    </center>
+
+                    and the key <b>matrix</b>
                     <center className="py-2">
                         <Latex>{'$K = \\begin{bmatrix} \\vert & & \\vert \\\\ k_1 & \\dots & k_7 \\\\ \\vert & & \\vert \\end{bmatrix}$'}</Latex>
                     </center>
@@ -164,13 +207,15 @@ const UnderstandingTransformers = () => {
 
                     ToDo
 
-                    <center>
+                    <center className="py-2">
                         <img
                             style={{width: "100%", height: "auto", maxWidth: "400px"}}
-                            alt="Attention architecture"
-                            title="Attention architecture"
+                            alt="The transformer architecture"
+                            title="The transformer architecture"
                             src="/assets/blog/understanding_transformers/attention_architecture.png"
                         />
+                        <br/>
+                        <i>The transformer architecture</i>
                     </center>
 
                     <h3 className="pt-4">?. Prompts and LLMs</h3>
@@ -183,10 +228,10 @@ const UnderstandingTransformers = () => {
                     <h3 className="pt-4">Resources</h3>
                     <ul>
                         <li>
-                            Jay Alammar's blog post <a rel="noreferrer" target="_blank" href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a>
+                            Jay Alammar's blog post <a rel="noreferrer" target="_blank" href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a>.
                         </li>
                         <li>
-                            3Blue1Brown's <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=wjZofJX0v4M">But what is a GPT?</a> and <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=eMlx5fFNoYc">Attention in transformers</a> videos
+                            3Blue1Brown's <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=wjZofJX0v4M">But what is a GPT?</a> and <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=eMlx5fFNoYc">Attention in transformers</a> videos.
                         </li>
                     </ul>
                 </div>

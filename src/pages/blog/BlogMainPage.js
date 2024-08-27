@@ -13,7 +13,7 @@ const BlogMainPage = () => {
     const location = useLocation();
     const isExactBlogRoute = matchPath({ path: '/blog', end: true }, location.pathname);
 
-    ReactGA.send({ hitType: "pageview", page: "/#" + location.pathname});
+    ReactGA.send({ hitType: "pageview", page: location.pathname});
     useChangePageTitle();
 
     return (

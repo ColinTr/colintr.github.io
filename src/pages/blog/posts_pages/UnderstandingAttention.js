@@ -9,7 +9,7 @@ const UnderstandingAttention = () => {
     const path = useLocation().pathname
 
     return (
-        <Container fluid className="d-flex flex-column" style={{minHeight: "80vh"}}>
+        <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify", fontFamily: "Arial"}}>
             <Row style={{flex: 1, display: "flex"}}>
                 <div>
                     <BlogLinkElement path={path} page_title={page_title}/>

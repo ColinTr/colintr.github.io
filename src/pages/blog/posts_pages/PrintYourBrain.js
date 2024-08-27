@@ -21,7 +21,7 @@ const PrintYourBrain = () => {
     const path = useLocation().pathname
 
     return (
-        <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify"}}>
+        <Container fluid className="d-flex flex-column" style={{minHeight: "80vh", textAlign: "justify", fontFamily: "Arial"}}>
             <div style={{padding:0}}>
                 <BrainModal
                     isModalOpen={isModalOpen}
