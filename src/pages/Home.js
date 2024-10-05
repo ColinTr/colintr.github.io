@@ -127,7 +127,7 @@ const Home = () => {
                                     <Col className="flex flex-grow-1 px-0">
                                         <p id="education_p" className="my-1">PhD in Data Science</p>
                                         <p id="education_p_2" className="my-1">IMT Atlantique, Orange Labs</p>
-                                        <p id="education_p_2" className="my-1">Oct. 2021 - Oct. 2024</p>
+                                        <p id="education_p_2" className="my-1">Oct. 2021 - Sept. 2024</p>
                                     </Col>
                                 </Row>
                                 <Row className="align-items-center">

@@ -110,7 +110,8 @@ const Publications = () => {
         })
     }
 
-    function citation_5_swal_video_popup() {
+    /*
+     function citation_5_swal_video_popup() {
         Swal.fire({
             title: ' ',
             html:
@@ -120,6 +121,7 @@ const Publications = () => {
             showConfirmButton: false,
         })
     }
+     */
 
     return (
         <section ref={publicationsRef} id='publicationsContainer'>
@@ -207,8 +209,13 @@ const Publications = () => {
                                         <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/InteractiveClustering" style={{display:"flex", alignItems:"center"}}>
                                             <FaGithub style={{marginRight: "3px"}}/> Code
                                         </a>
-                                        <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
-                                            <FaYoutube style={{marginRight: "3px"}}/> Video
+                                        {/**
+                                         <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" href="/#" onClick={() => citation_5_swal_video_popup()} style={{display:"flex", alignItems:"center"}}>
+                                         <FaYoutube style={{marginRight: "3px"}}/> Video
+                                         </a>
+                                         **/}
+                                        <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=W7ru8NHPj-8">
+                                            <FaYoutube/> Video
                                         </a>
                                     </Col>
                                     <Col xs={{ order: 1, span: 12 }} sm={{ order: 2, span: "auto" }} className="d-flex align-items-center">

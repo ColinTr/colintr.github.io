@@ -1,10 +1,9 @@
 import React from 'react';
 import { useNav } from '../customHooks/useNav';
 import { Col, Row } from "react-bootstrap";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
-import { FaRegFilePdf } from "react-icons/fa";
+import {FaRegFilePdf, FaYoutube} from "react-icons/fa";
 
 const Experience = () => {
     const experienceRef = useNav('Experience');
@@ -28,7 +27,7 @@ const Experience = () => {
                                 <h5 style={{padding: 0}}>PhD in data science</h5>
                             </Row>
                             <Row>
-                                <div className="p-0"><i>October 2021 to October 2024 (ongoing)</i> at Orange Labs, Lannion, France</div>
+                                <div className="p-0"><i>October 2021 to September 2024</i> at Orange Labs, Lannion, France</div>
                             </Row>
                         </Col>
                     </Row>
@@ -48,16 +47,18 @@ const Experience = () => {
                             </ul>
                         </Col>
                     </Row>
-                    {/*
                     <Row className="flex">
                         <div className="p-2">
-                            <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="">
+                            <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=nmwTBJ_7QLo">
+                                <span style={{marginRight:"3px"}}><FaYoutube/></span>
+                                <span>Video</span>
+                            </a>
+                            <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/tba.pdf">
                                 <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                 <span>Manuscript</span>
                             </a>
                         </div>
                     </Row>
-                    */}
 
                     <center><hr style={{width: '90%'}}/></center>
 

@@ -1,18 +1,18 @@
 import React from 'react';
-import Swal from "sweetalert2";
 import { useNav } from '../customHooks/useNav';
 import './Page.css';
 
 import {Col, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGithub, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import 'font-awesome/css/font-awesome.css'
-import {FaRegFilePdf} from "react-icons/fa";
+import {FaRegFilePdf, FaYoutube} from "react-icons/fa";
 
 const Projects = () => {
     const projectsRef = useNav('Projects');
 
+    /*
     function mario_swal_video_popup() {
         Swal.fire({
             title: ' ',
@@ -34,6 +34,7 @@ const Projects = () => {
             showConfirmButton: false,
         })
     }
+    */
 
     return (
         <section ref={projectsRef} id='projectsContainer'>
@@ -117,9 +118,14 @@ const Projects = () => {
                                     <button id="custom_button" className="btn btn-outline-primary my-1 btn-sm" onClick={() => window.open("/mario/Mario.html", "_blank")}>
                                         <img src="/assets/projects_illustrations/mario-small-jump.webp" alt="Jumping mario" title="Play Mario" style={{'width': '14px'}}/> Play it live!
                                     </button>
-                                    <button id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm" onClick={mario_swal_video_popup}>
-                                        <FontAwesomeIcon icon={faYoutube}/> Demo
-                                    </button>
+                                    {/**
+                                     <button id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm" onClick={mario_swal_video_popup}>
+                                     <FontAwesomeIcon icon={faYoutube}/> Demo
+                                     </button>
+                                     **/}
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=-SCnSPH7mK8">
+                                        <FaYoutube/> Demo
+                                    </a>
                                     <a id="custom_button" className="btn btn-outline-primary my-1 btn-sm" rel="noreferrer" target="_blank" href="https://github.com/ColinTr/MarioQT">
                                         <FontAwesomeIcon icon={faGithub}/> Code
                                     </a>
@@ -146,9 +152,14 @@ const Projects = () => {
                             </p>
                             <Row>
                                 <Col xs={{ order: 2 }} sm={{ order: 1 }} className="flex-grow-1">
-                                    <button id="custom_button" className="btn btn-outline-primary my-1 btn-sm" onClick={robot_hand_swal_video_popup}>
-                                        <FontAwesomeIcon icon={faYoutube}/> Demo
-                                    </button>
+                                    {/**
+                                     <button id="custom_button" className="btn btn-outline-primary my-1 btn-sm" onClick={robot_hand_swal_video_popup}>
+                                     <FontAwesomeIcon icon={faYoutube}/> Demo
+                                     </button>
+                                     **/}
+                                    <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=cz-6uy60Rsc">
+                                        <FaYoutube/> Demo
+                                    </a>
                                     <a id="custom_button" className="btn btn-outline-primary my-1 mx-2 btn-sm" rel="noreferrer" target="_blank" href="/assets/reports/Rapport_Projet_S4_Troisemaine_Levieux.pdf">
                                         <FaRegFilePdf/> Report
                                     </a>
