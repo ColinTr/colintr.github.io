@@ -3,7 +3,7 @@ import { useNav } from '../customHooks/useNav';
 import { Col, Row } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
-import {FaRegFilePdf, FaYoutube} from "react-icons/fa";
+import {FaRegFilePdf} from "react-icons/fa";
 
 const Experience = () => {
     const experienceRef = useNav('Experience');
@@ -37,8 +37,10 @@ const Experience = () => {
                             A rule-based application maintained by network experts is currently used to diagnose failures.
                             But a significant proportion of faults remain undiagnosed.
                             The aim here is to uncover the missing diagnostics from this heterogeneous set of tabular data with a purely <i>machine learning</i> approach.
-                            <br/>
-                            <br/>
+                        </Col>
+                    </Row>
+                    <Row className="pt-2">
+                        <Col style={{textAlign: "justify"}} className="flex-grow-1">
                             <ul style={{marginBottom: 0}}>
                                 <li>Developed 4 original techniques to discover novel classes in an unlabeled set of tabular data.</li>
                                 <li>Presented complex concepts to diverse audiences through accessible presentations at conferences.</li>
@@ -46,13 +48,20 @@ const Experience = () => {
                                 <li>Collected and curated a dataset of 500,000 real internet access faults and engineered 700 new features.</li>
                             </ul>
                         </Col>
+                        <Col sm={{ span: 12 }} md={{ span: "auto" }} className="d-flex align-items-center justify-content-center pt-2">
+                            <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=nmwTBJ_7QLo">
+                                <img id="grow_div" src="/assets/thesis_thumbnail.png" alt="Thesis defense video" style={{width: "100%", height: "auto", maxWidth: "300px"}}/>
+                            </a>
+                        </Col>
                     </Row>
                     <Row className="flex">
                         <div className="p-2">
-                            <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=nmwTBJ_7QLo">
-                                <span style={{marginRight:"3px"}}><FaYoutube/></span>
-                                <span>Video</span>
-                            </a>
+                            {/**
+                             <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=nmwTBJ_7QLo">
+                                 <span style={{marginRight:"3px"}}><FaYoutube/></span>
+                                 <span>Video</span>
+                             </a>
+                             **/}
                             <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/tba.pdf">
                                 <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
                                 <span>Manuscript</span>
