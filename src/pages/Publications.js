@@ -181,8 +181,8 @@ const Publications = () => {
 
                     <Row className="my-3">
                         <Col className="d-flex justify-content-center align-items-center order-2 order-sm-1 padding_when_extra_small" xs={12} sm={3}>
-                            <a rel="noreferrer" target="_blank" href='https://github.com/ColinTr/InteractiveClustering'>
-                                <img src="/assets/papers_illustrations/InteractiveClusteringInterfaceAnnotated.webp" style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Interactive Clustering Interface" id="grow_div"/>
+                            <a rel="noreferrer" target="_blank" href='https://www.youtube.com/watch?v=W7ru8NHPj-8'>
+                                <img src="/assets/papers_illustrations/InteractiveClusteringInterfaceThumbnail.png " style={{width: "100%", height: "auto", maxWidth: "170px"}} alt="Interactive Clustering Interface" id="grow_div"/>
                             </a>
                         </Col>
                         <Col xs={12} sm={9} className="order-1 order-sm-2" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
