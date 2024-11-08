@@ -62,9 +62,9 @@ const Experience = () => {
                                  <span>Video</span>
                              </a>
                              **/}
-                            <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/tba.pdf">
+                            <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/2024IMTA0422_Troisemaine-Colin.pdf">
                                 <span style={{marginRight:"3px"}}><FaRegFilePdf/></span>
-                                <span>Manuscript</span>
+                                <span>Thesis</span>
                             </a>
                         </div>
                     </Row>
