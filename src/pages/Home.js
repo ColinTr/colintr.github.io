@@ -39,16 +39,11 @@ const Home = () => {
                                     <span style={{color:'rgba(0,0,0)', fontSize: '35px'}}>Colin Troisemaine</span>
                                 </Row>
                                 <Row className="pt-3">
-                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>Research Engineer in Machine Learning</span>
+                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>PhD, AI engineer</span>
                                 </Row>
                                 <Row className="pt-2">
-                                    <span style={{fontSize: '20px'}}>
-                                        <a rel="noreferrer" target="_blank" href='https://lelab.orange.fr/locations/1' id="article_title">Orange Labs, France, Lannion</a>
-                                    </span>
-                                </Row>
-                                <Row className="pt-2">
-                                    <span style={{fontSize: '20px'}}>
-                                        <a rel="noreferrer" target="_blank" href='https://imt-atlantique.fr/' id="article_title">IMT Atlantique, France, Brest</a>
+                                    <span style={{fontSize: '20px', lineHeight: "1.3em"}}>
+                                        <a rel="noreferrer" target="_blank" href='https://lelab.orange.fr/locations/1' id="article_title">AMIAD - Agence Ministérielle pour l'IA de Défense, Rennes, France</a>
                                     </span>
                                 </Row>
                                 <Row className="pt-3 mb-2 container-fluid justify-content-center">
@@ -100,11 +95,10 @@ const Home = () => {
                         <Row>
                             <h1 id="h1_home">About me</h1>
                             <p align="justify" id="about_section">
-                                I am Colin Troisemaine, a PhD student in Data Science with a degree in Computer Engineering.
-                                I am currently working at the Orange R&D center in Lannion, under the supervision of the IMT Atlantique doctoral school.
-                                My research focuses on finding new diagnoses for the faults that occur in optical fiber networks.
-                                I am particularly interested in the area of <i>Novel Class Discovery</i>, which is at the intersection of several other lines of research (such as <i>Transfer Learning</i>, <i>Open-World Learning</i> or <i>Semi-Supervised Learning</i>).
-                                In my spare time, I love playing chess ♞ and guitar 🎸, and exploring cool technologies like 3D printing 🖨️ and FPV drone flying 🚁.
+                                I am Colin Troisemaine, a PhD in Data Science with a degree in Computer Engineering.
+                                I am currently working at AMIAD (Agence Ministérielle pour l'IA de Défense) in Rennes, where I engage with cutting-edge AI research and applications.
+                                My current interests span Large Language Models, Open-World Learning, Transfer Learning, and Unsupervised Learning.
+                                In my spare time, I love playing chess ♞ and guitar 🎸, and exploring technologies like 3D printing 🖨️ and FPV drone flying 🚁.
                             </p>
                         </Row>
                         <Row style={{lineHeight: "1.1em"}}>

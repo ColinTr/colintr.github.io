@@ -16,7 +16,24 @@ const Experience = () => {
                 </Col>
 
                 <Col className="col-12 col-lg-9">
-                    <Row className="my-3">
+                    <Row className="my-3 align-items-center">
+                        <Col className="flex flex-grow-0">
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/amiad-minarm">
+                                <img src="/assets/logos/amiad_logo.jpg" alt="AMIAD logo" title="AMIAD" id="grow_div" style={{'width': '50px'}}/>
+                            </a>
+                        </Col>
+                        <Col className="align-content-start flex flex-grow-1">
+                            <Row>
+                                <h5 style={{padding: 0}}>Ingénieur en intelligence artificielle</h5>
+                            </Row>
+                            <Row>
+                                <div className="p-0"><i>January 2025 to today</i> at AMIAD - Agence Ministérielle pour l'IA de Défense, Rennes, France</div>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                    <center><hr style={{width: '90%'}}/></center>
+                    <Row className="my-3 align-items-center">
                         <Col className="flex flex-grow-0">
                             <a rel="noreferrer" target="_blank" href="https://lelab.orange.fr/locations/1">
                                 <img src="/assets/logos/logo_orange.svg" alt="Orange logo" title="Orange Labs" id="grow_div" style={{'width': '50px'}}/>
@@ -58,8 +75,8 @@ const Experience = () => {
                         <div className="p-2">
                             {/**
                              <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=nmwTBJ_7QLo">
-                                 <span style={{marginRight:"3px"}}><FaYoutube/></span>
-                                 <span>Video</span>
+                             <span style={{marginRight:"3px"}}><FaYoutube/></span>
+                             <span>Video</span>
                              </a>
                              **/}
                             <a id="custom_button" className="btn btn-outline-primary my-1 mx-1 btn-sm js-cite-modal" rel="noreferrer" target="_blank" href="/assets/reports/2024IMTA0422_Troisemaine-Colin.pdf">
@@ -71,7 +88,7 @@ const Experience = () => {
 
                     <center><hr style={{width: '90%'}}/></center>
 
-                    <Row className="my-3">
+                    <Row className="my-3 align-items-center">
                         <Col className="flex flex-grow-0">
                             <a rel="noreferrer" target="_blank" href="https://lelab.orange.fr/locations/1">
                                 <img src="/assets/logos/logo_orange.svg" alt="Orange logo" title="Orange Labs" id="grow_div" style={{'width': '50px'}}/>
@@ -110,7 +127,7 @@ const Experience = () => {
 
                     <center><hr style={{width: '90%'}}/></center>
 
-                    <Row className="my-3">
+                    <Row className="my-3 align-items-center">
                         <Col className="flex flex-grow-0">
                             <a rel="noreferrer" target="_blank" href="https://worldline.com/">
                                 <img src="/assets/logos/logo_worldline.webp" alt="Worldline Global logo" title="Worldline Global" id="grow_div" style={{'width': '50px'}}/>
