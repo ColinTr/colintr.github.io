@@ -24,7 +24,7 @@ const Experience = () => {
                         </Col>
                         <Col className="align-content-start flex flex-grow-1">
                             <Row>
-                                <h5 style={{padding: 0}}>AI engineer</h5>
+                                <h5 style={{padding: 0}}>Data Scientist</h5>
                             </Row>
                             <Row>
                                 <div className="p-0"><i>January 2025 to today</i> at AMIAD - Agence Ministérielle pour l'IA de Défense, Rennes, France</div>

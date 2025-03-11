@@ -39,7 +39,7 @@ const Home = () => {
                                     <span style={{color:'rgba(0,0,0)', fontSize: '35px'}}>Colin Troisemaine</span>
                                 </Row>
                                 <Row className="pt-3">
-                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>PhD, AI engineer</span>
+                                    <span style={{color:'rgba(0,0,0,.54)', fontSize: '20px'}}>PhD, Data Scientist</span>
                                 </Row>
                                 <Row className="pt-2">
                                     <span style={{fontSize: '20px', lineHeight: "1.3em"}}>
