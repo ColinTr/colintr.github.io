@@ -43,7 +43,7 @@ const Home = () => {
                                 </Row>
                                 <Row className="pt-2">
                                     <span style={{fontSize: '20px', lineHeight: "1.3em"}}>
-                                        <a rel="noreferrer" target="_blank" href='https://lelab.orange.fr/locations/1' id="article_title">AMIAD - Agence Ministérielle pour l'IA de Défense, Rennes, France</a>
+                                        <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/company/amiad-minarm' id="article_title">AMIAD - Agence Ministérielle pour l'IA de Défense, Rennes, France</a>
                                     </span>
                                 </Row>
                                 <Row className="pt-3 mb-2 container-fluid justify-content-center">
