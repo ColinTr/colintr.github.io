@@ -74,7 +74,7 @@ const Home = () => {
                                     </Col>
                                     <Col className="d-flex col-auto px-2 justify-content-center" id="grow_div">
                                         <a rel="noreferrer" target="_blank" href='/assets/CV_Latex_Colin_Troisemaine_English.pdf'>
-                                            <img src="/assets/logos/cv-icon.png" alt="ORCID iD" title="ORCID iD" style={{'width': '32px'}}/>
+                                            <img src="/assets/logos/cv-icon.png" alt="Curriculum vitæ" title="Curriculum vitæ" style={{'width': '32px'}}/>
                                         </a>
                                     </Col>
                                 </Row>
