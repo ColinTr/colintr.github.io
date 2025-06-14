@@ -4,7 +4,7 @@
 
 A personal resume website built with React.js and bootstrap.
 
-## 1. To tart the website in development mode
+## 1. To start the website in development mode
 
 > npm run start
 
